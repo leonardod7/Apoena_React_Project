@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import Menu from "../componentes/Menu";
+import Menu from "../componentes/Menu/Menu";
 
 function App() {
   return (

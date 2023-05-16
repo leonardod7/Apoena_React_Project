@@ -1,11 +1,11 @@
-import {Link} from "react-router-dom";
+import { MenuItem, Nav } from "./Style";
 
-const Menu = ( ) => (
-    <nav>
-        <Link to="/"> Home </Link>
-        <Link to="/teste"> Teste </Link>
-        
-    </nav>
+
+const Menu = () => (
+  <Nav>
+    <MenuItem to="/">Home</MenuItem>
+    <MenuItem to="/Teste">Teste</MenuItem>
+  </Nav>
 );
 
 export default Menu;
