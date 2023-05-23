@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import {Link} from "react-router-dom";
-import Menu from "../componentes/Menu/Menu";
-=======
 import { Link } from "react-router-dom";
 import Menu from "../components/Menu/Menu";
 import Comparativo from "../components/Comparativo/Comparativo";
 import ContasAgendadas from "../components/ContasAgendadas/ContasAgendadas";
->>>>>>> gripa
 
 function App() {
   return (
