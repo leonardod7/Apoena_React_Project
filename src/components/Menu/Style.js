@@ -4,7 +4,7 @@ const MeuNav = styled.nav`
     position: flex;
     width: 300px;
     height: 100%;
-    border: solid black 1px;
+    border: #BFBFBF 1px solid;
 `;
 
 const MeuDiv = styled.div`
