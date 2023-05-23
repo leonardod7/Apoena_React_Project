@@ -5,7 +5,6 @@ const Container = styled.div`
     flex-direction: row;
     align-items: center;
     background-color: #5B1F53;
-    position: absolute;
     width: 100%;
     height: 64px;
     left: 0px;
