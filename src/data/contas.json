@@ -1,0 +1,18 @@
+[
+    {
+        "descricao": "Pagamento de material",
+        "valor": "R$ 4.200,10"
+    },
+    {
+        "descricao": "Reposição de estoque",
+        "valor": "R$ 5.515,23"
+    },
+    {
+        "descricao": "Pagamento de título",
+        "valor": "R$ 2.545,66"
+    },
+    {
+        "descricao": "Venda de produto",
+        "valor": "R$ 350,66"
+    }
+]
