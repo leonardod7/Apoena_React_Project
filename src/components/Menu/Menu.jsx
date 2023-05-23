@@ -12,8 +12,9 @@ import ImagemRelatoriosLancamentos from "../../imagens/relatorios_lancamentos.pn
 import ImagemAgendamentos from "../../imagens/relogio.png";
 import ImagemInadiplencias from "../../imagens/inadiplencias.png";
 import ImagemLogo from "../../imagens/logo_gargo.png";
-import ImagemMeiosDePagamentos from "../../imagens/meios_de_pagamentos.png";
 import ImagemSifrao from "../../imagens/sifrao.png";
+{/* import ImagemMeiosDePagamentos from "../../imagens/meios_de_pagamentos.png" */}
+
 
 const Menu = () => (
     <MeuNav>
@@ -38,7 +39,7 @@ const Menu = () => (
         
         <MeuDiv>
             <img src={ImagemExtrato} alt="extrato"/>
-            <p>Extrato</p>
+            <Link to="/transacoes">Extrato</Link>
         </MeuDiv>
 
         <MeuDiv>
@@ -77,12 +78,9 @@ const Menu = () => (
         </MeuDiv>
 
         <MeuDiv>
-            <img src={ImagemMeiosDePagamentos} alt="meios_de_pagamentos"/>
-            <Link to="/meiosdepagamentos">Meios de pagamentos</Link>
+            {/*<img src={ImagemMeiosDePagamentos} alt="meios_de_pagamentos"/>
+            <Link to="/meiosdepagamentos">Meios de pagamentos</Link> */}
         </MeuDiv>
-
-        <Link to="/teste">Teste</Link>
-        <Link to="/transacoes">Transações</Link>
     </MeuNav>
 );
 
