@@ -2,17 +2,19 @@ import { Link } from "react-router-dom";
 import Menu from "../components/Menu/Menu";
 import Comparativo from "../components/Comparativo/Comparativo";
 import ContasAgendadas from "../components/ContasAgendadas/ContasAgendadas";
+import { Titulo } from "../components/ContasAgendadas/Style";
+import Icone from "../imagens/home.png"
 
 function App() {
   return (
     <>
-    <Menu/>
-    <h1>Meu cabeçalho</h1>
-    <p className="meu_p">um texto</p>
-    <Link to="/teste">Clique para ir par a página de teste</Link>
-    <br /><br /><br />
-    <ContasAgendadas />
-    <Comparativo />
+      <Menu/>
+      <Titulo
+          id = "Home"
+          icon = {Icone}
+      />
+      <ContasAgendadas />
+      <Comparativo />
     </>
     
   );

@@ -1,4 +1,4 @@
-import Card_Comparativo from "../../images/card_comparativo.png";
+import Card_Comparativo from "../../imagens/card_comparativo.png";
 import Container from "./Style";
 
 

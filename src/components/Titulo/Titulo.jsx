@@ -1,12 +1,15 @@
-import { SpanTitulo,Container } from "./Style";
+import { SpanTitulo,Container, Icone } from "./Style";
 
 
 const Titulo= (page) => (
     <Container>
-       <SpanTitulo>{page.id}</SpanTitulo> 
-
+        <Icone>
+            <img src = {page.icon} alt="ícone" />
+        </Icone>
+        <SpanTitulo>
+            {page.id}
+        </SpanTitulo> 
     </Container>
-
 
 ); 
 
