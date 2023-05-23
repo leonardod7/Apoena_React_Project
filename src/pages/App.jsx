@@ -11,7 +11,7 @@ function App() {
     <>
       <Header/>
       <Menu/>
-      <Titulo
+        <Titulo
           id = "Home"
           icon = {Icone}
       />

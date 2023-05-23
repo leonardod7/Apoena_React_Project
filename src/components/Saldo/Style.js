@@ -18,9 +18,7 @@ border-radius: 8px;
 /* Saldo em conta */
 const SaldoConta = styled.span`
 position: absolute;
-width: 111px;
 height: 19px;
-left: 16px;
 top: 16px;
 
 font-family: 'Roboto';
@@ -72,7 +70,7 @@ border-radius: 50px;
 
 arrow, arrows, control, controls, music, refresh, renew, repeat, replay, video
 */
-const Replay = styled.span`
+const Replay = styled.div`
 
 position: absolute;
 width: 24px;
@@ -91,7 +89,7 @@ top: 8.33%;
 bottom: 8.33%;
 
 /* Color/Primary/Branding */
-background: #5B1F53;
+
 `;
 
 /* Badge */
@@ -118,7 +116,6 @@ border-radius: 19px;
 
 /* Label */
 const Label = styled.span`
-width: 84px;
 height: 12px;
 
 font-family: 'Roboto';
