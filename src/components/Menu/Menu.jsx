@@ -74,7 +74,7 @@ const Menu = () => (
 
         <MeuDiv>
             <img src={ImagemInadiplencias} alt="inadiplencias"/>
-            <p>Inadiplências</p>
+            <p>Inadimplências</p>
         </MeuDiv>
 
         <MeuDiv>
