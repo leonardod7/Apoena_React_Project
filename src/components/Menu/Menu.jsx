@@ -13,7 +13,7 @@ import ImagemAgendamentos from "../../imagens/relogio.png";
 import ImagemInadiplencias from "../../imagens/inadiplencias.png";
 import ImagemLogo from "../../imagens/logo_gargo.png";
 import ImagemSifrao from "../../imagens/sifrao.png";
-{/* import ImagemMeiosDePagamentos from "../../imagens/meios_de_pagamentos.png" */}
+import ImagemMeiosDePagamentos from "../../imagens/meios_de_pagamentos.png";
 
 
 const Menu = () => (
@@ -78,8 +78,8 @@ const Menu = () => (
         </MeuDiv>
 
         <MeuDiv>
-            {/*<img src={ImagemMeiosDePagamentos} alt="meios_de_pagamentos"/>
-            <Link to="/meiosdepagamentos">Meios de pagamentos</Link> */}
+            <img src={ImagemMeiosDePagamentos} alt="meios_de_pagamentos"/>
+            <Link to="/meiosdepagamentos">Meios de pagamentos</Link>
         </MeuDiv>
     </MeuNav>
 );
