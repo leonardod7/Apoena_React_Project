@@ -16,8 +16,8 @@ import ImagemSifrao from "../../imagens/sifrao.png";
 {/* import ImagemMeiosDePagamentos from "../../imagens/meios_de_pagamentos.png" */}
 
 
-const Menu = () => (
-    <MeuNav>
+const Menu = ({isOpen}) => (
+    <MeuNav isOpen = {isOpen}>
         <MeuLogo>
             <img src={ImagemLogo}/>
         </MeuLogo>

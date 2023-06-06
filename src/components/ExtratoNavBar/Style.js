@@ -2,22 +2,29 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-    position: relative;
-    width: 1008px;
     height: 64px;
-    left: 300px;
-    top: 64px;
     background: #FFFFFF;
+    width: 70%;
+    position: absolute;
+    top: 150px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left:20px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    
+    &.menuAberto {
+        margin-left: 20%; /* Ajuste o valor conforme necessário */
+    };
 `;
 
 const Periodo = styled.span`
     /* Junho 2022 */
 
-    position: absolute;
     height: 19px;
-    left: 43px;
-    top: 24px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -31,30 +38,23 @@ const Periodo = styled.span`
 `;
 
 const VetorContainer = styled.div`
-    position: relative;
     width: 24px;
     height: 24px;
-    top: 10px;
-    left: 180px;
 `;
 
 const Vetor = styled.div`
     /* Vector */
 
-    position: absolute;
-    left: 26.72%;
-    right: 26.72%;
-    top: 63.72%;
-    bottom: 8.84%;
 `;
 
 const OpcoesContainer = styled.div`
-    position: relative;
     width: 200px;
     height: 10px;
-    top: 10px;
-    left: 800px;
+`;
+
+const ContainerEspaco = styled.div`
+    width: 40%;
 `;
 
 
-export {Container, Periodo, VetorContainer, Vetor, OpcoesContainer};
+export {Container, Periodo, VetorContainer, Vetor, OpcoesContainer, ContainerEspaco};
