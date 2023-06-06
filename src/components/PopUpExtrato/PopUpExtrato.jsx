@@ -17,7 +17,7 @@ function PopUpHome() {
             </DivManHolding>
 
             <DivTexto>
-                <p> Com o gargo premium você ganha mais controle das suas finanças...Contrate já. </p>
+                <p> Contrate o Gargo Premium e veja seu extrato com o maior detalhamento possível! </p>
             </DivTexto>
 
             <DivSino>

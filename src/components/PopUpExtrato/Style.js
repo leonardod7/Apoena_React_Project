@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Conteiner = styled.div`
+    position: relative;
     width: 264px;
     height: 487px;
-    left: 984px;
-    top: 180px;
+    left: 80%;
+    bottom:100px
 
     background: #FFFFFF;
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.1);
