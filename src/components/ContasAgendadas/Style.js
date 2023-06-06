@@ -3,11 +3,10 @@ import styled from "styled-components";
 const Container = styled.div`
 /* Card_List */
 
-position: absolute;
 width: 312px;
 height: 267px;
-left: 316px;
-top: 296px;
+margin-right: 20px;
+margin-bottom: 20px;
 
 /* Color/B&W/White */
 background: #FFFFFF;
@@ -20,8 +19,6 @@ border-radius: 8px;
 
 const Titulo = styled.span`
     /* Contas agendadas */
-
-    position: absolute;
     width: 312px;
     height: 19px;
     left: 16px;
