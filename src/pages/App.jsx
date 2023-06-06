@@ -69,9 +69,14 @@ function App() {
         style = "order:1"
         isOpen = {MenuAberto}
       />
- 
-    </>    
-  ); 
+
+      <Saldo/>
+      <ContasAgendadas />
+      <Comparativo />
+      
+    </>
+  );
+
 }
 
 export default App;

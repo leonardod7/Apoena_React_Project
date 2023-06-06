@@ -7,7 +7,7 @@ import {createBrowserRouter, RouterProvider} from
 "react-router-dom";
 import Teste from './pages/Teste';
 import Transacoes from './pages/Transacoes';
-import 'bootstrap/dist/css/bootstrap.css';
+import MeiosDePagamentos from './pages/MeiosDePagamentos';
 
 
 const router = createBrowserRouter([
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "transacoes",
     element: <Transacoes />
+  },
+  {
+    path: "meiosdepagamentos",
+    element: <MeiosDePagamentos />
   }
 ])
 
