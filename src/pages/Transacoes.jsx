@@ -4,8 +4,11 @@ import Header from "../components/Header/Header";
 import Menu from "../components/Menu/Menu";
 import Titulo from "../components/Titulo/Titulo";
 import Icone from "../imagens/extrato.png";
-import Container from "./Style";
+
+import {ContainerExtrato} from "./Style";
 import { useState } from "react";
+import PopUpExtrato from "../components/PopUpExtrato/PopUpExtrato"
+
 
 const Subtitulo = "Visualize, baixe e compartilhe as informações do seu extrato bancário.";
 const TemNavBar = true;
@@ -35,9 +38,13 @@ const Transacoes = () => {
             <ExtratoNavBar 
                 isOpen = {MenuAberto}    
             />
-            <Container temNavBar = {TemNavBar} className={MenuAberto ? "menuAberto" : ""}>
+
+            <ContainerExtrato temNavBar = {TemNavBar} className={MenuAberto ? "menuAberto" : ""}>
                 <Extrato />
-            </Container>
+                <PopUpExtrato />
+            </ContainerExtrato>
+        
+
         
         </>
     );
