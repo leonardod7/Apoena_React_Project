@@ -5,6 +5,7 @@ import { Titulo } from "../components/ContasAgendadas/Style";
 import Icone from "../imagens/home.png"
 import Header from "../components/Header/Header";
 import Saldo from "../components/Saldo/Saldo";
+import PopUpHome from "../components/PopUpHome/PopUpHome";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Saldo/>
       <ContasAgendadas />
       <Comparativo />
+      <PopUpHome/>
     </>
     
   );
