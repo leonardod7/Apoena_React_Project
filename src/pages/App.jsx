@@ -28,14 +28,14 @@ function App() {
         toggleMenu = {toggleMenu}
         isOpen = {MenuAberto}  
       />
-      <Container
+      <ContainerHome
        temNavBar = {TemNavBar}
         className={MenuAberto ? "menuAberto" : ""}
       >
         <Saldo style = "order:2"/>
         <ContasAgendadas style = "order:3"/>
         <Comparativo style = "order:4" />
-      </Container>
+      </ContainerHome>
       <Menu
        isOpen = {MenuAberto}
        />

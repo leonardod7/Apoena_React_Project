@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import Dispositivo from "../../utils";
 const SpanTitulo = styled.span`
-
-width: 65px;
-height: 28px;
-font-family: 'ROBOTO';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 28px;
-color: #5B1F53;
-margin-right: 50%;
+    height: 28px;
+    font-family: 'ROBOTO';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #5B1F53;
+    margin-right: 50%;
 `;
 
 const Container = styled.div`

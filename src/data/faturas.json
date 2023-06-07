@@ -1,0 +1,174 @@
+[
+    {
+      "valor": 5000,
+      "status": "paga",
+      "codigo": "ABC",
+      "data_vencimento": "2023-06-30",
+      "data_criacao": "2023-06-01",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Lucas Santos"
+    },
+    {
+      "valor": 2500,
+      "status": "em análise",
+      "codigo": "EFG",
+      "data_vencimento": "2023-07-15",
+      "data_criacao": "2023-06-02",
+      "tipo": "pix",
+      "nome_cliente": "Maria Santos"
+    },
+    {
+      "valor": 8000,
+      "status": "paga",
+      "codigo": "IJK",
+      "data_vencimento": "2023-06-20",
+      "data_criacao": "2023-06-03",
+      "tipo": "boleto",
+      "nome_cliente": "Pedro Almeida"
+    },
+    {
+      "valor": 3000,
+      "status": "em análise",
+      "codigo": "MNO",
+      "data_vencimento": "2023-07-05",
+      "data_criacao": "2023-06-04",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Camila Lima"
+    },
+    {
+      "valor": 7000,
+      "status": "paga",
+      "codigo": "QRS",
+      "data_vencimento": "2023-06-25",
+      "data_criacao": "2023-06-05",
+      "tipo": "pix",
+      "nome_cliente": "Lucas Santos"
+    },
+    {
+      "valor": 4000,
+      "status": "paga",
+      "codigo": "UVW",
+      "data_vencimento": "2023-06-28",
+      "data_criacao": "2023-06-06",
+      "tipo": "boleto",
+      "nome_cliente": "Camila Lima"
+    },
+    {
+      "valor": 6000,
+      "status": "em análise",
+      "codigo": "YZA",
+      "data_vencimento": "2023-07-10",
+      "data_criacao": "2023-06-07",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Juliana Paes"
+    },
+    {
+      "valor": 9000,
+      "status": "paga",
+      "codigo": "CDE",
+      "data_vencimento": "2023-06-18",
+      "data_criacao": "2023-06-08",
+      "tipo": "pix",
+      "nome_cliente": "Lucas Santos"
+    },
+    {
+      "valor": 1500,
+      "status": "paga",
+      "codigo": "GHI",
+      "data_vencimento": "2023-06-23",
+      "data_criacao": "2023-06-09",
+      "tipo": "boleto",
+      "nome_cliente": "Juliana Paes"
+    },
+    {
+      "valor": 10000,
+      "status": "em análise",
+      "codigo": "KLM",
+      "data_vencimento": "2023-06-25",
+      "data_criacao": "2023-06-09",
+      "tipo": "boleto",
+      "nome_cliente": "Juliana Paes"
+    },
+    {
+      "valor": 5500,
+      "status": "paga",
+      "codigo": "OPQ",
+      "data_vencimento": "2023-06-15",
+      "data_criacao": "2023-06-10",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Carolina Lima"
+    },
+    {
+      "valor": 3200,
+      "status": "em análise",
+      "codigo": "STU",
+      "data_vencimento": "2023-07-08",
+      "data_criacao": "2023-06-11",
+      "tipo": "pix",
+      "nome_cliente": "Gustavo Oliveira"
+    },
+    {
+      "valor": 8500,
+      "status": "paga",
+      "codigo": "WXY",
+      "data_vencimento": "2023-06-22",
+      "data_criacao": "2023-06-12",
+      "tipo": "boleto",
+      "nome_cliente": "Carolina Lima"
+    },
+    {
+      "valor": 2800,
+      "status": "em análise",
+      "codigo": "234",
+      "data_vencimento": "2023-07-03",
+      "data_criacao": "2023-06-13",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Gustavo Oliveira"
+    },
+    {
+      "valor": 7200,
+      "status": "paga",
+      "codigo": "567",
+      "data_vencimento": "2023-06-30",
+      "data_criacao": "2023-06-14",
+      "tipo": "pix",
+      "nome_cliente": "Beatriz Oliveira"
+    },
+    {
+      "valor": 4200,
+      "status": "paga",
+      "codigo": "890",
+      "data_vencimento": "2023-06-26",
+      "data_criacao": "2023-06-15",
+      "tipo": "boleto",
+      "nome_cliente": "Beatriz Oliveira"
+    },
+    {
+      "valor": 6500,
+      "status": "em análise",
+      "codigo": "MN3",
+      "data_vencimento": "2023-07-07",
+      "data_criacao": "2023-06-16",
+      "tipo": "cartão de crédito",
+      "nome_cliente": "Ricardo Pereira"
+    },
+    {
+      "valor": 9200,
+      "status": "paga",
+      "codigo": "QR6",
+      "data_vencimento": "2023-06-17",
+      "data_criacao": "2023-06-17",
+      "tipo": "pix",
+      "nome_cliente": "Amanda Santos"
+    },
+    {
+      "valor": 1700,
+      "status": "paga",
+      "codigo": "U89",
+      "data_vencimento": "2023-06-21",
+      "data_criacao": "2023-06-18",
+      "tipo": "boleto",
+      "nome_cliente": "Gustavo Oliveira"
+    }
+]
+  
