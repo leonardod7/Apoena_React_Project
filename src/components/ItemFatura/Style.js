@@ -19,6 +19,12 @@ const Valor = styled.span`
         width: 10%;
     };
 
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+    };
+
+    @media screen and (min-width: ${Dispositivo.mobile}px) {
+    };
+
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
         width: 10%;
     };
@@ -31,8 +37,10 @@ const Status = styled.span`
         width: 15%;
     };
     
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+    };
+
     @media screen and (min-width: ${Dispositivo.mobile}px) {
-        display: block;
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
@@ -100,6 +108,13 @@ const Tipo = styled.span`
         width: 14%;
     };
 
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+    };
+
+    @media screen and (min-width: ${Dispositivo.mobile}px) {
+    };
+
+
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
     };
 `;
@@ -107,6 +122,12 @@ const Tipo = styled.span`
 const Nome = styled.span`
     @media screen and (min-width: ${Dispositivo.desktop}px) {
         width: 20%;
+    };
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+    };
+
+    @media screen and (min-width: ${Dispositivo.mobile}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {

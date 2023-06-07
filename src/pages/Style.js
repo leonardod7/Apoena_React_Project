@@ -2,7 +2,7 @@ import { styled} from "styled-components";
 import Dispositivo from "../utils";
 
 const ContainerHome = styled.div`
-    position:relative;
+    position: relative;
     padding-top: 20px;
     padding-left: 40px;
     top: 100px;
@@ -31,11 +31,11 @@ const ContainerHome = styled.div`
 `;
 
 const ContainerExtrato = styled.div`
-    position:relative;
+    position: relative;
     padding-top: 20px;
     padding-left: 40px;
-    top: ${props => (props.temNavBar ?'100px' : '100px')};
-    width:90%;
+    top: 100px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
