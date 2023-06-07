@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Dispositivo from "../../utils";
 const SpanTitulo = styled.span`
+    width: 250px;
     height: 28px;
     font-family: 'ROBOTO';
     font-style: normal;

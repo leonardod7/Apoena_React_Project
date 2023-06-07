@@ -5,7 +5,7 @@ const Container = styled.div`
     width: 70%;
     height: 440px;
     overflow-y: scroll;
-    padding-left: 25%;
+    padding-left: 10%;
     padding-top: 150px;
 `;
 

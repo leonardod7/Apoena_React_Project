@@ -1,15 +1,4 @@
 import Menu from "../components/Menu/Menu";
-<<<<<<< Updated upstream
-import Perfil from "../components/Perfil/Perfil";
-
-const MeiosDePagamentos = ( ) => (
-    <>
-    <Menu />
-    <p>Página de Meios de Pagamentos</p>
-    <Perfil/>
-    </>
-);
-=======
 import Header from "../components/Header/Header";
 import Titulo from "../components/Titulo/Titulo";
 import Icone from "../imagens/meios_de_pagamentos.png";
@@ -45,6 +34,5 @@ const MeiosDePagamentos = () => {
         </>
     );
 }
->>>>>>> Stashed changes
 
 export default MeiosDePagamentos;

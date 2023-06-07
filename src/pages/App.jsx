@@ -28,39 +28,21 @@ function App() {
         toggleMenu = {toggleMenu}
         isOpen = {MenuAberto}  
       />
-      <ContainerHome
-       temNavBar = {TemNavBar}
-        className={MenuAberto ? "menuAberto" : ""}
-      >
-        <Saldo style = "order:2"/>
-        <ContasAgendadas style = "order:3"/>
-        <Comparativo style = "order:4" />
-      </ContainerHome>
-      <Menu
-       isOpen = {MenuAberto}
-       />
-      <Titulo
-        id = "Home"
-        icon = {Icone}
-        subtitulo = {Subtitulo}
-        temNavBar = {TemNavBar}
-        style = "order:1"
-        isOpen = {MenuAberto}
-      />
           
       <ContainerHome
-       temNavBar = {TemNavBar}
+        temNavBar = {TemNavBar}
         className={MenuAberto ? "menuAberto" : ""}
       >
         <Saldo style = "order:2"/>
         <ContasAgendadas style = "order:3"/>
         <Comparativo style = "order:4" />
-        <PopUpHome
-          />
+        <PopUpHome/>
       </ContainerHome>
+
       <Menu
        isOpen = {MenuAberto}
        />
+       
       <Titulo
         id = "Home"
         icon = {Icone}
