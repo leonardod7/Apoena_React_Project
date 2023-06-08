@@ -6,10 +6,20 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: normal;
+    gap: 10px;
+`;
+
+const Cabecalho = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
     justify-content: normal;
     gap: 10px;
-
+    position: relative;
+    padding-left: 10%;
+    padding-top: 150px;
 `;
 
 const Valor = styled.span`
@@ -31,8 +41,6 @@ const Valor = styled.span`
 `;
 
 const Status = styled.span`
-    display: none;
-
     @media screen and (min-width: ${Dispositivo.desktop}px) {
         width: 15%;
     };
@@ -44,7 +52,7 @@ const Status = styled.span`
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        
+        width: 15%;
     };
 `;
 
@@ -134,4 +142,4 @@ const Nome = styled.span`
     };
 `;
 
-export {Container, Valor, Status, Codigo, DataVencimento, DataCriacao, Tipo, Nome};
+export {Container, Cabecalho, Valor, Status, Codigo, DataVencimento, DataCriacao, Tipo, Nome};

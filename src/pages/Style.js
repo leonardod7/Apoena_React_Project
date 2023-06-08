@@ -51,15 +51,12 @@ const ContainerExtrato = styled.div`
 
     @media screen and (min-width: ${Dispositivo.desktop}px) {
       height: 720px;
-       
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
       margin-top: 40px;
       left: 20%;
-
     };
-
 `;
 
 const ContainerFaturas = styled.div`
