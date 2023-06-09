@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import Titulo from "../components/Titulo/Titulo";
 import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
+import Clientes from "../components/Clientes/Clientes";
 import {ContainerFaturas} from "./Style";
 import { useState } from "react";
 
@@ -29,7 +30,7 @@ const MeiosDePagamentos = () => {
                 isOpen = {MenuAberto}
             />
             <ContainerFaturas>
-                <Faturas/>
+                <Clientes/>
             </ContainerFaturas>
         </>
     );

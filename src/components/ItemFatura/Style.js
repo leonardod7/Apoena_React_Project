@@ -23,36 +23,38 @@ const Cabecalho = styled.div`
 `;
 
 const Valor = styled.span`
-
+    width: 20%;
 
     @media screen and (min-width: ${Dispositivo.desktop}px) {
         width: 10%;
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 15%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        width: 10%;
     };
 `;
 
 const Status = styled.span`
+    width: 30%;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
         width: 15%;
     };
     
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 20%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        width: 15%;
     };
 `;
 
@@ -60,11 +62,11 @@ const Codigo = styled.span`
     display: none;
 
     @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 7%;
+        display: block;
+        width: 10%;
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        display: block;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
@@ -82,10 +84,11 @@ const DataVencimento = styled.span`
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        display: block;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
+        display: block;
+        width: 20%;
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
@@ -107,35 +110,41 @@ const DataCriacao = styled.span`
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        
     };
 `;
 
 const Tipo = styled.span`
+    display: none;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 14%;
+        width: 15%;
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        display: block;
+        width: 20%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
     };
-
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
     };
 `;
 
 const Nome = styled.span`
+    width: 50%;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 20%;
+        width: 16%;
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 25%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
+        width:30%;
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
