@@ -5,6 +5,9 @@ import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
 import {ContainerFaturas} from "./Style";
 import { useState } from "react";
+import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
+import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
+
 
 const Subtitulo = "";
 const TemNavBar = true;
@@ -21,13 +24,22 @@ const MeiosDePagamentos = () => {
         <>
             <Header toggleMenu = {toggleMenu}/>
             <Menu isOpen = {MenuAberto}/>
-            <Titulo
-                id = "Meios de Pagamentos"
-                icon = {Icone}
-                subtitulo = {Subtitulo}
-                temNavBar = {TemNavBar}
-                isOpen = {MenuAberto}
-            />
+            {/*<Titulo*/}
+            {/*    id = "Meios de Pagamentos"*/}
+            {/*    icon = {Icone}*/}
+            {/*    subtitulo = {Subtitulo}*/}
+            {/*    temNavBar = {TemNavBar}*/}
+            {/*    isOpen = {MenuAberto}*/}
+            {/*/>*/}
+
+            {/*/meu conteúdo leonardo*/}
+            <Container_Header>
+                <TituloHeader_pgto>Emissão de Novas Faturas</TituloHeader_pgto>
+                <BotaoHeader_pgto>Nova Fatura</BotaoHeader_pgto>
+                <BotaoHeader_pgto>Voltar</BotaoHeader_pgto>
+            </Container_Header>
+            {/*/meu conteúdo leonardo*/}
+
             <ContainerFaturas>
                 <Faturas/>
             </ContainerFaturas>
