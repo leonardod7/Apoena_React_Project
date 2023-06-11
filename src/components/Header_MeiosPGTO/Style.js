@@ -6,6 +6,7 @@ const Container_Header = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left;
+    left: 125px;
     padding-top: 10px;
     position: relative;
 

@@ -25,13 +25,6 @@ const MeiosDePagamentos = () => {
         <>
             <Header toggleMenu = {toggleMenu}/>
             <Menu isOpen = {MenuAberto}/>
-            {/*<Titulo*/}
-            {/*    id = "Meios de Pagamentos"*/}
-            {/*    icon = {Icone}*/}
-            {/*    subtitulo = {Subtitulo}*/}
-            {/*    temNavBar = {TemNavBar}*/}
-            {/*    isOpen = {MenuAberto}*/}
-            {/*/>*/}
 
             <Container_Header className={MenuAberto ? "menuAberto" : ""}>
                 <TituloHeader_pgto>Emissão de Novas Faturas</TituloHeader_pgto>
