@@ -4,32 +4,26 @@ import Dispositivo from "../../utils";
 const MeuNav = styled.nav`
     position: absolute;
     top: 64px;
-    width: 20%;
+    width: 250px;
     height: 100%;
     border: #BFBFBF 1px solid;
     transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(-300%)'};
     flex-grow: ${({ menuAberto }) => (menuAberto ? 1 : 0)};
     transition: transform 0.3s ease-in-out;
     background-color: white;
-    z-index: 999; /* Nível de sobreposição */
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        width: 80%;
-      };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-        width: 45%;
+    z-index: 999;
+    
+    @media screen and (min-width: ${Dispositivo.desktop}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 30%;
+    };
+    
+    @media screen and (min-width: ${Dispositivo.mobile}px) {
     };
 
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 20%;
+    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
     };
-
-
 `;
 
 const MeuDiv = styled.div`

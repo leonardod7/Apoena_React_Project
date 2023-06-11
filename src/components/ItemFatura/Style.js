@@ -4,6 +4,7 @@ import Dispositivo from "../../utils";
 
 const Container = styled.div`
     display: flex;
+    max-width: 1100px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: normal;
@@ -12,14 +13,15 @@ const Container = styled.div`
 
 const Cabecalho = styled.div`
     display: flex;
+    max-width: 1100px;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: normal;
     gap: 10px;
     position: relative;
-    padding-left: 10%;
-    padding-top: 150px;
+    padding-left: 0%;
+    padding-top: 50px;
 `;
 
 const Valor = styled.span`
@@ -52,6 +54,7 @@ const Status = styled.span`
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
+        width: 25%;
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
@@ -144,7 +147,7 @@ const Nome = styled.span`
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
-        width:30%;
+        width:35%;
     };
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {

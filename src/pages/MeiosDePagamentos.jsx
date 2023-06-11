@@ -1,7 +1,7 @@
 import Menu from "../components/Menu/Menu";
 import Header from "../components/Header/Header";
-import Titulo from "../components/Titulo/Titulo";
-import Icone from "../imagens/meios_de_pagamentos.png";
+//import Titulo from "../components/Titulo/Titulo";
+//import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
 import {ContainerFaturas} from "./Style";
@@ -11,7 +11,7 @@ import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../componen
 
 
 const Subtitulo = "";
-const TemNavBar = true;
+const TemNavBar = false;
 
 const MeiosDePagamentos = () => {
 
@@ -33,16 +33,16 @@ const MeiosDePagamentos = () => {
             {/*    isOpen = {MenuAberto}*/}
             {/*/>*/}
 
-            {/*/meu conteúdo leonardo*/}
-            <Container_Header>
+            <Container_Header className={MenuAberto ? "menuAberto" : ""}>
                 <TituloHeader_pgto>Emissão de Novas Faturas</TituloHeader_pgto>
-                <BotaoHeader_pgto>Nova Fatura</BotaoHeader_pgto>
-                <BotaoHeader_pgto>Voltar</BotaoHeader_pgto>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <BotaoHeader_pgto>Nova Fatura</BotaoHeader_pgto>
+                    <BotaoHeader_pgto>Voltar</BotaoHeader_pgto>
+                </div>
             </Container_Header>
-            {/*/meu conteúdo leonardo*/}
 
-            <ContainerFaturas>
-                <Clientes/>
+            <ContainerFaturas className={MenuAberto ? "menuAberto" : ""}>
+                <Faturas/>
             </ContainerFaturas>
         </>
     );

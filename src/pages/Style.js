@@ -60,9 +60,16 @@ const ContainerExtrato = styled.div`
 `;
 
 const ContainerFaturas = styled.div`
-      position:relative;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      position: relative;
       padding-top: 20px;
-      padding-left: 20px;
+
+      &.menuAberto {
+        left: 20%;
+        width: 80%;
+      };
 `;
 
 export {ContainerHome, ContainerExtrato, ContainerFaturas};

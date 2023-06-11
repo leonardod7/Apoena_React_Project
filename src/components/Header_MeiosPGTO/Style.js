@@ -3,13 +3,17 @@ import styled from "styled-components";
 const Container_Header = styled.div`
     width: 100%;
     display: flex;
-    //border: 1px solid red;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-`;
+    align-items: left;
+    padding-top: 10px;
+    position: relative;
 
+    &.menuAberto {
+    left: 270px;
+    width: 80%;
+    };
+`;
 
 const TituloHeader_pgto = styled.h1`
     font-family: 'ROBOTO';
