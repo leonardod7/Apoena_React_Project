@@ -1,0 +1,52 @@
+[
+    {
+      "nome_cliente": "Lucas Santos",
+      "email": "lucas.santos@gmail.com",
+      "data_criacao": "2023-01-01"
+    },
+    {
+      "nome_cliente": "Maria Santos",
+      "email": "maria.santos@gmail.com",
+      "data_criacao": "2023-01-03"
+    },
+    {
+      "nome_cliente": "Pedro Almeida",
+      "email": "pedro.almeida@gmail.com",
+      "data_criacao": "2023-01-05"
+    },
+    {
+      "nome_cliente": "Camila Lima",
+      "email": "camila.lima@gmail.com",
+      "data_criacao": "2023-02-01"
+    },
+    {
+      "nome_cliente": "Juliana Paes",
+      "email": "juliana.paes@gmail.com",
+      "data_criacao": "2023-02-02"
+    },
+    {
+      "nome_cliente": "Carolina Lima",
+      "email": "carolina.lima@gmail.com",
+      "data_criacao": "2023-02-03"
+    },
+    {
+      "nome_cliente": "Gustavo Oliveira",
+      "email": "gustavo.oliveira@gmail.com",
+      "data_criacao": "2023-03-03"
+    },
+    {
+      "nome_cliente": "Beatriz Oliveira",
+      "email": "beatriz.oliveira@gmail.com",
+      "data_criacao": "2023-04-04"
+    },
+    {
+      "nome_cliente": "Ricardo Pereira",
+      "email": "lucas.santos@gmail.com",
+      "data_criacao": "2023-01-01"
+    },
+    {
+      "nome_cliente": "Amanda Santos",
+      "email": "amanda.santos@gmail.com",
+      "data_criacao": "2023-04-04"
+    }
+]
