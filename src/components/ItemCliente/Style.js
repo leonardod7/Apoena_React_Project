@@ -4,6 +4,7 @@ import Dispositivo from "../../utils";
 
 const Container = styled.div`
     display: flex;
+    max-width: 900px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: normal;
@@ -12,21 +13,25 @@ const Container = styled.div`
 
 const Cabecalho = styled.div`
     display: flex;
+    max-width: 900px;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     justify-content: normal;
     gap: 10px;
     position: relative;
-    padding-left: 10%;
-    padding-top: 150px;
+    padding-left: 5%;
+    padding-top: 50px;
 `;
 
 const Nome = styled.span`
+    width: 25%;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 20%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
@@ -37,10 +42,14 @@ const Nome = styled.span`
 `;
 
 const Email = styled.span`
+    width: 50%;
+    justify-content: left;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
     };
     
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 30%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
@@ -51,10 +60,14 @@ const Email = styled.span`
 `;
 
 const DataCriacao = styled.span`
+    display: none;
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
     };
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
+        display: block;
+        width: 25%;
     };
 
     @media screen and (min-width: ${Dispositivo.mobile}px) {
@@ -64,4 +77,16 @@ const DataCriacao = styled.span`
     };
 `;
 
-export {Container, Cabecalho, Nome, Email, DataCriacao};
+const Botao = styled.button`
+    width: 25%;
+    justify-content: right;
+    background-color: light grey;
+    color: #5B1F53;
+    width: 100px;
+    height: 30px;
+    border-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+`;
+
+export {Container, Cabecalho, Nome, Email, DataCriacao, Botao};

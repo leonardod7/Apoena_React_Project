@@ -35,7 +35,7 @@ const MeiosDePagamentos = () => {
             </Container_Header>
 
             <ContainerFaturas className={MenuAberto ? "menuAberto" : ""}>
-                <Faturas/>
+                <Clientes/>
             </ContainerFaturas>
         </>
     );

@@ -9,4 +9,9 @@ const Container = styled.div`
     padding-top: 20px;
 `;
 
+const Botao = styled.button`
+    background-color: 'blue',
+    color: 'white'
+`;
+
 export default Container;

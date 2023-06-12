@@ -1,4 +1,4 @@
-import { Container, Nome, Email, DataCriacao } from "./Style";
+import { Container, Nome, Email, DataCriacao, Botao } from "./Style";
 
 const ItemCliente = ( props ) => (
     <>
@@ -6,6 +6,7 @@ const ItemCliente = ( props ) => (
             <Nome>{props.nome}</Nome>
             <Email>{props.email}</Email>
             <DataCriacao>{props.data_criacao}</DataCriacao>
+            <Botao>Criar fatura</Botao>
         </Container>
     </>
 );
