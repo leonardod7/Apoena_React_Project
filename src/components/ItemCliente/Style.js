@@ -20,12 +20,13 @@ const Cabecalho = styled.div`
     justify-content: normal;
     gap: 10px;
     position: relative;
-    padding-left: 5%;
+    padding-left: 0%;
     padding-top: 50px;
 `;
 
 const Nome = styled.span`
     width: 25%;
+    justify-content: right;
 
     @media screen and (min-width: ${Dispositivo.desktop}px) {
     };

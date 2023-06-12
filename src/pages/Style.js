@@ -1,4 +1,4 @@
-import { styled} from "styled-components";
+import { styled } from "styled-components";
 import Dispositivo from "../utils";
 
 const ContainerHome = styled.div`
@@ -74,6 +74,28 @@ const ContainerFaturas = styled.div`
         left: 20%;
         width: 80%;
       };
+
+      &.oculto {
+        display: none;
+      } 
 `;
 
-export {ContainerHome, ContainerExtrato, ContainerFaturas};
+const ContainerClientes = styled.div`
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      position: relative;
+      padding-top: 20px;
+      left: 180px;
+
+      &.menuAberto {
+        left: 20%;
+        width: 80%;
+      };
+
+      &.oculto {
+        display: none;
+      } 
+`;
+
+export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes};

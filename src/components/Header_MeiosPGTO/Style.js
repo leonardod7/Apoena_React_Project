@@ -14,6 +14,10 @@ const Container_Header = styled.div`
     left: 270px;
     width: 80%;
     };
+
+    &.oculto {
+        display: none;
+    }
 `;
 
 const TituloHeader_pgto = styled.h1`

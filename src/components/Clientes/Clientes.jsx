@@ -21,8 +21,7 @@ const Clientes = () => (
                             nome={ele.nome_cliente}
                             email={ele.email}
                             data_criacao={ele.data_criacao}                           
-                        >
-                        </ItemCliente>
+                        />
                     )
                     
                 )
