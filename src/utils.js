@@ -1,2 +1,9 @@
-export const medioMobile = 321;
-export const tablet = 768;
+export const Dispositivo = {
+  smallMobile: 320,
+  mobile: 480,
+  tablet: 768,
+  desktop: 1024,
+};
+
+
+export default Dispositivo;
