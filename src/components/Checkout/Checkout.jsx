@@ -1,4 +1,4 @@
-import {Container, Titulo, LogoSpan, BeneficioDiv, BeneficioIcone, BeneficioDescricao,BotaoDiv, BotaoContratacao} from "./Style";
+import {Container, Titulo, LogoSpan, BeneficioDiv, BeneficioIcone, BeneficioDescricao,BotaoDiv, BotaoContratacao, NavegarCardDiv, BotaoSair, BotaoAvancar} from "./Style";
 import Logo from "../../imagens/logo-gargo-premium.png";
 import Engrenagem from "../../imagens/engrenagem-checkout.png";
 import Relogio from "../../imagens/relogio-checkout.png";
@@ -27,6 +27,14 @@ const Checkout = () => {
                     CONTRATE AGORA!
                 </BotaoContratacao>
             </BotaoDiv>
+            <NavegarCardDiv>
+                <BotaoSair>
+                    Sair
+                </BotaoSair>
+                <BotaoAvancar>
+                    >>
+                </BotaoAvancar>
+            </NavegarCardDiv>
         </Container>
 
     );

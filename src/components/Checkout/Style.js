@@ -42,6 +42,7 @@ const Container = styled.div`
 const LogoSpan = styled.span`
     width: 187px;
     height: 61px;
+    padding-top: 10px;
 `;
 
 
@@ -52,9 +53,8 @@ const Titulo = styled.span`
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
         /* PAGAMENTO RÁPIDO E FÁCIL */
 
-        position: relative;
         width: 238px;
-        height: 46px;
+        height: 46px;        
 
         font-family: 'Roboto';
         font-style: normal;
@@ -113,13 +113,58 @@ const BotaoContratacao = styled.button`
     border-radius: 17px;
 `;
 
+const NavegarCardDiv = styled.div`
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+`;
 
 
-export {Container,
-     LogoSpan,
-      Titulo,
-       BeneficioDiv,
-       BeneficioIcone,
-        BeneficioDescricao,
-        BotaoDiv, 
-        BotaoContratacao};
+const BotaoSair = styled.span`
+    /* Sair */
+
+    width: 42px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #F1F1F1;
+`;
+
+const BotaoAvancar = styled.span`
+
+    /* >> */
+
+    width: 42px;
+    height: 21px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #F1F1F1;
+
+`;
+
+export {
+    Container,
+    LogoSpan,
+    Titulo,
+    BeneficioDiv,
+    BeneficioIcone,
+    BeneficioDescricao,
+    BotaoDiv,
+    BotaoContratacao,
+    NavegarCardDiv,
+    BotaoAvancar,
+    BotaoSair
+};
