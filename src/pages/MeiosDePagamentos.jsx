@@ -8,6 +8,7 @@ import { ContainerFaturas, ContainerClientes } from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
+import Checkout from "../components/Checkout/Checkout";
 
 
 const Subtitulo = "";
@@ -34,6 +35,7 @@ const MeiosDePagamentos = () => {
     
     return (
         <>
+            <Checkout />
             <Header toggleMenu = {toggleMenu}/>
             <Menu isOpen = {MenuAberto}/>
 
@@ -59,6 +61,7 @@ const MeiosDePagamentos = () => {
             <ContainerClientes className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
                 <Clientes/>
             </ContainerClientes>
+            
         </>
     );
 }
