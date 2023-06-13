@@ -4,40 +4,45 @@ import Dispositivo from "../../utils";
 
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  transition: flex-grow 0.3s ease-in-out;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #9747ff;
+  border-radius: 17px;
+  width: 288px;
+
+
+  @media screen and (max-width: ${Dispositivo.smallMobile}px) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    z-index: 9999;
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    padding-top: 20px;
-    left: 40px;
-    top: 100px;
-    gap:80px;
- 
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    align-content: flex-start;
-    transition: flex-grow 0.3s ease-in-out;
+  }
 
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        height: auto;
-        position: absolute;
-        max-width: 1100px;
-        left: 17px;
-        top: 15px;
-        background: #9747FF;
-        border-radius: 17px;
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        position: absolute;
-        width: 288px;
-        height: auto;
-        left: 17px;
-        top: 15px;
-        background: #9747FF;
-        border-radius: 17px;
-    };
+  @media screen and (max-width: ${Dispositivo.desktop}px) {
+    width: 288px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
 `;
+
+
+
 
 const LogoSpan = styled.span`
     width: 187px;
