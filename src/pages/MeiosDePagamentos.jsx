@@ -59,6 +59,7 @@ const MeiosDePagamentos = () => {
             <ContainerClientes className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
                 <Clientes/>
             </ContainerClientes>
+            
         </>
     );
 }

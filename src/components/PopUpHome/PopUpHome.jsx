@@ -3,8 +3,14 @@ import ImagePopUp from "../../imagens/ManHoldingGraphic.png";
 import GraficoPopUp from "../../imagens/graficoPopUp.png";
 import SinoPopUp from "../../imagens/PopUpIcon.png"
 import SaibaMaisPopUp from "../../imagens/Button.png"
+import {useState} from "react";
 
-function PopUpHome() {
+function PopUpHome({abrirCheckout}) {
+
+    const handleSaibaMaisClick = () =>{
+        abrirCheckout(); //Chamar o Componente CheckOut quando Saiba Mais for clicado.
+    };
+
     return (
         <Conteiner>
 
@@ -25,7 +31,7 @@ function PopUpHome() {
             </DivSino>
 
             <DivSaibaMais>
-                <img src = {SaibaMaisPopUp} />
+                <img src = {SaibaMaisPopUp} onClick = {handleSaibaMaisClick}/>
             </DivSaibaMais>
 
         </Conteiner>
