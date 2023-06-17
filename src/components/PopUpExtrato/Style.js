@@ -5,9 +5,8 @@ const Conteiner = styled.div`
     width: 264px;
     height: 487px;
     left: 80%;
-    bottom:100px
-
-    background: #FFFFFF;
+    bottom:100px;
+    background-color: #FFFFFF;
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.1);
     border-radius: 11px;
 `;
