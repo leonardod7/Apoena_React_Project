@@ -3,7 +3,7 @@ import { Container, Valor, Status, Codigo, DataVencimento, DataCriacao, Tipo, No
 const ItemFatura = ( props ) => (
     <>
         <Container>
-            <Valor>{props.valor}</Valor>
+            <Valor>R$ {props.valor}</Valor>
             <Status>{props.status}</Status>
             <Codigo>{props.cod}</Codigo>
             <DataVencimento>{props.data_venc}</DataVencimento>

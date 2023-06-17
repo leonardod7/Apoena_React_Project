@@ -65,10 +65,11 @@ const ContainerExtrato = styled.div`
 const ContainerFaturas = styled.div`
       display: flex;
       flex-direction: column;
-      align-items: left;
+      align-items: center;
+      justify-content: center;
       position: relative;
       padding-top: 20px;
-      left: 180px;
+      min-width: 400px;
 
       &.menuAberto {
         left: 20%;
@@ -77,7 +78,16 @@ const ContainerFaturas = styled.div`
 
       &.oculto {
         display: none;
-      } 
+      }
+      
+      @media (max-width: 768px) {
+        width: 100%;
+    
+        &.menuAberto {
+          left: 0;
+          width: 100%;
+        }
+      }
 `;
 
 const ContainerClientes = styled.div`

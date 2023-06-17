@@ -5,10 +5,21 @@ import Dispositivo from "../../utils";
 const Container = styled.div`
     display: flex;
     max-width: 1100px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: normal;
     gap: 10px;
+
+    @media screen and (max-width: ${Dispositivo.tablet}px) {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        background-color: #f1f1f1;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 `;
 
 const Cabecalho = styled.div`
