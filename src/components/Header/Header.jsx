@@ -2,6 +2,7 @@ import {Container,Vmenu,Vperfil,Vsino,Titulo, SubContainer} from "./Style";
 import ImagemMenu from "../../imagens/Menu.png";
 import ImagemSino from "../../imagens/Sino.png" ;
 import ImagemPerfil from "../../imagens/Perfil.png" ;
+<<<<<<< Updated upstream
 
 const Header =({toggleMenu, isOpen}) => {
    
@@ -40,6 +41,8 @@ const Header =() => (
         <Vsino><img src={ImagemSino} alt="ImagemSino"/></Vsino>
         <Vperfil><img src={ImagemPerfil} alt="ImagemPerfil"/></Vperfil>
     </Container>
+=======
+>>>>>>> Stashed changes
 
 
 const Header =({toggleMenu, isOpen}) => {
