@@ -4,7 +4,7 @@ import Header from "../components/Header/Header";
 //import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
-import { ContainerFaturas, ContainerClientes } from "./Style";
+import { ContainerFaturas, ContainerClientes, Div } from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
@@ -48,17 +48,19 @@ const MeiosDePagamentos = () => {
                 <Faturas/>
             </ContainerFaturas>
 
-            <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
-                <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
-                    <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
-                </div>
-            </Container_Header>
+            <Div>
+                <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
+                    <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
+                        <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
+                    </div>
+                </Container_Header>
 
-            <ContainerClientes className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
-                <Clientes/>
-            </ContainerClientes>
+                <ContainerClientes className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
+                    <Clientes/>
+                </ContainerClientes>
+            </Div>
         </>
     );
 }

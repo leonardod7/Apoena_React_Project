@@ -3,166 +3,83 @@ import Dispositivo from "../../utils";
 
 
 const Container = styled.div`
+    font-family: 'Roboto', sans-serif;
     display: flex;
+    align-items: center;
     max-width: 1100px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    gap: 10px;
-
-    @media screen and (max-width: ${Dispositivo.tablet}px) {
-        position: relative;
-        width: 100%;
-        padding: 10px;
-        background-color: #f1f1f1;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-`;
-
-const Cabecalho = styled.div`
-    display: flex;
-    max-width: 1100px;
+    min-width: 280px;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
-    justify-content: normal;
+    justify-content: center;
     gap: 10px;
-    position: relative;
-    padding-left: 0%;
-    padding-top: 50px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
 `;
 
-const Valor = styled.span`
-    width: 20%;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 10%;
-    };
+const DivValor = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 15%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        flex-direction: row;
     };
 `;
 
-const Status = styled.span`
-    width: 30%;
+const Valor = styled.div`
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    font-weight: bold;
 
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 15%;
-    };
-    
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 20%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-        width: 25%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        width: 100%;
     };
 `;
 
-const Codigo = styled.span`
-    display: none;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        display: block;
-        width: 10%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
+const Status = styled.div`
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 110px;
 `;
 
-const DataVencimento = styled.span`
-    display: none;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 17%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-        display: block;
-        width: 20%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
+const Datas = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
 `;
 
-const DataCriacao = styled.span`
-    display: none;
+const DataVencimento = styled.div`
+`;
 
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        display: block;
-        width: 17%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
+const DataCriacao = styled.div`
 `;
 
 const Tipo = styled.span`
     display: none;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 15%;
-    };
+    width: 180px;
+    justify-content: center;
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
-        display: block;
-        width: 20%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        display: flex;
+        justify-content: center;
     };
 `;
 
-const Nome = styled.span`
-    width: 50%;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 16%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 25%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-        width:35%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
+const Nome = styled.div`
+    text-align: center;
 `;
 
-export {Container, Cabecalho, Valor, Status, Codigo, DataVencimento, DataCriacao, Tipo, Nome};
+export {Container, DivValor, Valor, Status, Datas, DataVencimento, DataCriacao, Tipo, Nome};
