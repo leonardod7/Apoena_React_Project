@@ -24,7 +24,7 @@ const Titulo = styled.span`
     left: 16px;
     top: 16px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

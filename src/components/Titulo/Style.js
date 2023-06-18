@@ -3,7 +3,7 @@ import Dispositivo from "../../utils";
 const SpanTitulo = styled.span`
     width: 250px;
     height: 28px;
-    font-family: 'ROBOTO';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -36,7 +36,7 @@ const Icone = styled.div`
 
 const Subtitulo = styled.span`
     height: 16px;
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

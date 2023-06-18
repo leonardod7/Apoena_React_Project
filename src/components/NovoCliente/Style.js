@@ -60,6 +60,7 @@ const Enviar = styled.div`
     height: 25px;
     left:750px;
     bottom:50px;
+    border-radius:8px;
     text-align: center;
 `;
 const Sair= styled.div`
@@ -70,6 +71,11 @@ const Sair= styled.div`
     left: 900px;
     top: 25px;
     border-radius: 20px;
-    image-orientation:center;
+    vertical-align:bottom;
 `;
-export {Container,Container2,Container3,Container4,Container5,Enviar,Sair}
+const Titulo = styled.div`
+    position: absolute;
+    text-align: center;
+    left: 20px;
+`;
+export {Container,Container2,Container3,Container4,Container5,Enviar,Sair,Titulo}

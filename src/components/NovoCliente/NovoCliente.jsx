@@ -1,9 +1,10 @@
-import {Container,Container2,Container3,Container4,Container5,Enviar,Sair} from "./Style.js";
+import {Container,Container2,Container3,Container4,Container5,Enviar,Sair,Titulo} from "./Style.js";
 import ImagemX from "../../imagens/sair.png" ;
 
 const NovoCliente = ( props ) => (
     <Container>
-        <Sair><img src={ImagemX} alt="ImagemX"/></Sair>
+        <Titulo><h1>Novo Cliente</h1></Titulo>
+        <Sair><img src={ImagemX} alt="ImagemX" style={{paddingLeft:"7px",paddingTop:"5px"}}/></Sair>
         <h3 style={{paddingTop:"50px",paddingLeft:"50px"}}>Nome</h3>
         <Container2></Container2>
         <h3 style={{paddingTop:"50px",paddingLeft:"50px"}}>E-mail</h3>
