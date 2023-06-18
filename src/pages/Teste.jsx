@@ -4,7 +4,7 @@ import Menu from "../components/Menu/Menu";
 
 const Teste = ( ) => (
     <Checkout>
-        <p>TESTE TESTE TESTE</p>
+        
     </Checkout>
 
 );
