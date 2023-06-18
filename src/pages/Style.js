@@ -6,7 +6,7 @@ const ContainerHome = styled.div`
     flex-direction: column;
     position: relative;
     padding-top: 20px;
-    left: 40px;
+    padding-left: 20px;
     top: 100px;
     max-width: 1100px;
     gap:80px;
@@ -17,7 +17,7 @@ const ContainerHome = styled.div`
     transition: flex-grow 0.3s ease-in-out;
 
     &.menuAberto {
-        margin-left: 0%; /* Ajuste o valor conforme necessário */
+        margin-left: 20%; /* Ajuste o valor conforme necessário */
         width:80%;
     };
 
@@ -27,7 +27,7 @@ const ContainerHome = styled.div`
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
         margin-top: 40px;
-        left: 20%;
+
     };
 
 `;
