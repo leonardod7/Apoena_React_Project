@@ -1,4 +1,4 @@
-import {Container,Container2,AdicionarItem,Salvar,MetodoPagamento} from "./Style.js";
+import {Container,Container2,AdicionarItem,Salvar,MetodoPagamento,Dropdown} from "./Style.js";
 
 const NovaFatura = ( props ) => (
     <Container>
@@ -12,7 +12,7 @@ const NovaFatura = ( props ) => (
         <Container2></Container2>
         <AdicionarItem >Adicionar Item</AdicionarItem>
         <Salvar>Salvar</Salvar>
-        <MetodoPagamento></MetodoPagamento>
+        <MetodoPagamento><Dropdown></Dropdown></MetodoPagamento>
         
     </Container>
 );

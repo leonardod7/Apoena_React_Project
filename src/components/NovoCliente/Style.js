@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Dispositivo  from "../../utils";
 
 
+
 const Container = styled.div`
     position: absolute;
     background-color: #e1e1ff;

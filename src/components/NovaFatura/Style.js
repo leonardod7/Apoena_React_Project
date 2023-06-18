@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Dispositivo  from "../../utils";
+import React, { useState } from 'react';
 
 const Container = styled.div`
     position: absolute;
@@ -10,6 +11,7 @@ const Container = styled.div`
     bottom:300px;
     top: 50px;
     border-radius:10px;
+    border: 2px solid black;
 
 
    /*@media screen and (min-width: ${Dispositivo.desktop}px) {
@@ -45,6 +47,7 @@ const Container2 = styled.div`
     bottom:300px;
     top: 300px;
     border-radius: 10px;
+    border: 2px solid black;
 `;
 const AdicionarItem = styled.div`
     position: absolute;
@@ -73,5 +76,29 @@ const MetodoPagamento = styled.div`
     left:50px;
     bottom:50px;
     border-radius: 10px;
+    border: 2px solid black;
 `;
-export {Container,Container2,AdicionarItem,Salvar,MetodoPagamento} 
+function Dropdown() {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+  
+    return (
+      <div className="dropdown">
+        <button className="dropbtn" onClick={toggleMenu} style={{paddingTop:"10px",width:"500px",backgroundColor:"#f1f1f1"}}>
+          Método De Pagamento
+        </button>
+        {isOpen && (
+          <div className="dropdown-content" style={{backgroundColor:"#ffff"}}>
+            <p>Pix</p>
+            <p>Cartão De Crédito</p>
+            <p>Boleto</p>
+          </div>
+        )}
+      </div>
+    );
+  }
+  
+export {Container,Container2,AdicionarItem,Salvar,MetodoPagamento,Dropdown} 
