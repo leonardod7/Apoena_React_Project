@@ -1,13 +1,20 @@
 import styled from "styled-components";
+import Dispositivo from "../../utils.js"
 
 const Container = styled.div`
     position: relative;
-    width: 100%;
     max-width: 1100px;
-    height: 300px;
     overflow-y: scroll;
-    padding-left: 0%;
-    padding-top: 20px;
+    border-top: 4px solid #5B1F53;
 `;
 
-export default Container;
+const Cabecalho = styled.div`
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5B1F53;
+    align-text: left;
+    margin-bottom: 20px;
+`;
+
+export { Container, Cabecalho };

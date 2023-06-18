@@ -25,7 +25,7 @@ const Nome = styled.div`
     margin-left: 40px;
     margin-top: 10px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -38,7 +38,7 @@ const Conta = styled.div`
     height: 14px;
     margin-left: 40px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;

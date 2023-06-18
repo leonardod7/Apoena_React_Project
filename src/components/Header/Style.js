@@ -15,7 +15,7 @@ const Titulo = styled.div`
     width: 43px;
     height: 19px;
     color: white;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
