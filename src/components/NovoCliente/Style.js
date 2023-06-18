@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Dispositivo  from "../../utils";
 
 
-
 const Container = styled.div`
     position: absolute;
     background-color: #e1e1ff;
@@ -12,6 +11,7 @@ const Container = styled.div`
     bottom:300px;
     top: 100px;
     border-radius:10px;
+    box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
     `;
 const Container2 = styled.div`
     position: absolute;
@@ -62,4 +62,14 @@ const Enviar = styled.div`
     bottom:50px;
     text-align: center;
 `;
-export {Container,Container2,Container3,Container4,Container5,Enviar}
+const Sair= styled.div`
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color:#f1f1f1;
+    left: 900px;
+    top: 25px;
+    border-radius: 20px;
+    image-orientation:center;
+`;
+export {Container,Container2,Container3,Container4,Container5,Enviar,Sair}

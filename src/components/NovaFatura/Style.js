@@ -56,8 +56,9 @@ const AdicionarItem = styled.div`
     height: 25px;
     left:80px;
     bottom:300px;
-    top: 415px;
+    top: 410px;
     text-align: center;
+    border: 3px solid black;
 `;
 const Salvar = styled.div`
     position: absolute;

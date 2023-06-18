@@ -6,7 +6,7 @@ import NovaFatura from "../components/NovaFatura/NovaFatura";
 const Teste = ( ) => (
     <div id='nova_pagina'>
         <Menu />
-        <NovaFatura/>
+        <NovoCliente></NovoCliente>
     </div>
 );
 
