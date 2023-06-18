@@ -5,10 +5,10 @@ const Container = styled.div`
     position: absolute;
     background-color: #e1e1ff;
     width: 950px;
-    height: 500px;
+    height: 600px;
     left:200px;
     bottom:300px;
-    top: 100px;
+    top: 50px;
     border-radius:10px;
 
 
@@ -43,7 +43,7 @@ const Container2 = styled.div`
     height: 100px;
     left:50px;
     bottom:300px;
-    top: 200px;
+    top: 300px;
     border-radius: 10px;
 `;
 const AdicionarItem = styled.div`
@@ -53,7 +53,7 @@ const AdicionarItem = styled.div`
     height: 25px;
     left:80px;
     bottom:300px;
-    top: 315px;
+    top: 415px;
     text-align: center;
 `;
 const Salvar = styled.div`
