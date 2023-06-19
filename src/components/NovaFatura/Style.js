@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 const Container = styled.div`
     position: absolute;
     background-color: #e1e1ff;
-    width: 950px;
-    height: 600px;
-    left:200px;
-    bottom:300px;
-    top: 50px;
+    width: 80%;
+    height: 90%;
+    left:10%;
+    top: 5%;
     border-radius:10px;
     border: 2px solid black;
+    box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
 
 
    /*@media screen and (min-width: ${Dispositivo.desktop}px) {
@@ -41,22 +41,27 @@ const Container = styled.div`
 const Container2 = styled.div`
     position: absolute;
     background-color: #320019;
-    width: 500px;
-    height: 100px;
-    left:50px;
-    bottom:300px;
-    top: 300px;
+    width: 80%;
+    height: 35%;
+    left:1%;
+    bottom:30%;
     border-radius: 10px;
     border: 2px solid black;
+
+    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        width:70%;
+        height:25%;
+        left:10%;
+        bottom:35%;
+    };
 `;
 const AdicionarItem = styled.div`
     position: absolute;
     background-color: blue;
     width: 120px;
     height: 25px;
-    left:80px;
-    bottom:300px;
-    top: 410px;
+    left:20%;
+    bottom:22%;
     text-align: center;
     border: 3px solid black;
 `;
@@ -65,17 +70,24 @@ const Salvar = styled.div`
     background-color: greenyellow;
     width: 120px;
     height: 25px;
-    left:800px;
-    bottom:100px;
+    left:75%;
+    bottom:10%;
     text-align: center;
+
+    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        width:50px;
+        height: 50px;
+        left:75%;
+        bottom:10%;
+    }
 `;
 const MetodoPagamento = styled.div`
     position: absolute;
     background-color: #320019;
-    width: 500px;
-    height: 100px;
+    width: 50%;
+    height: 15%;
     left:50px;
-    bottom:50px;
+    bottom:5%;
     border-radius: 10px;
     border: 2px solid black;
 `;
@@ -88,7 +100,7 @@ function Dropdown() {
   
     return (
       <div className="dropdown">
-        <button className="dropbtn" onClick={toggleMenu} style={{paddingTop:"10px",width:"500px",backgroundColor:"#f1f1f1"}}>
+        <button className="dropbtn" onClick={toggleMenu} style={{paddingTop:"10px",width:"100%",backgroundColor:"#f1f1f1"}}>
           Método De Pagamento
         </button>
         {isOpen && (
