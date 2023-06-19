@@ -1,52 +1,72 @@
 [
-    {
-      "nome_cliente": "Lucas Santos",
-      "email": "lucas.santos@gmail.com",
-      "data_criacao": "2023-01-01"
-    },
-    {
-      "nome_cliente": "Maria Santos",
-      "email": "maria.santos@gmail.com",
-      "data_criacao": "2023-01-03"
-    },
-    {
-      "nome_cliente": "Pedro Almeida",
-      "email": "pedro.almeida@gmail.com",
-      "data_criacao": "2023-01-05"
-    },
-    {
-      "nome_cliente": "Camila Lima",
-      "email": "camila.lima@gmail.com",
-      "data_criacao": "2023-02-01"
-    },
-    {
-      "nome_cliente": "Juliana Paes",
-      "email": "juliana.paes@gmail.com",
-      "data_criacao": "2023-02-02"
-    },
-    {
-      "nome_cliente": "Carolina Lima",
-      "email": "carolina.lima@gmail.com",
-      "data_criacao": "2023-02-03"
-    },
-    {
-      "nome_cliente": "Gustavo Oliveira",
-      "email": "gustavo.oliveira@gmail.com",
-      "data_criacao": "2023-03-03"
-    },
-    {
-      "nome_cliente": "Beatriz Oliveira",
-      "email": "beatriz.oliveira@gmail.com",
-      "data_criacao": "2023-04-04"
-    },
-    {
-      "nome_cliente": "Ricardo Pereira",
-      "email": "lucas.santos@gmail.com",
-      "data_criacao": "2023-01-01"
-    },
-    {
-      "nome_cliente": "Amanda Santos",
-      "email": "amanda.santos@gmail.com",
-      "data_criacao": "2023-04-04"
-    }
+  {
+    "nome_cliente": "Lucas Santos",
+    "email": "lucas.santos@gmail.com",
+    "cpf": "123.456.789-00",
+    "endereco": "Rua A, 123",
+    "data_criacao": "2023-01-01"
+  },
+  {
+    "nome_cliente": "Maria Santos",
+    "email": "maria.santos@gmail.com",
+    "cpf": "987.654.321-00",
+    "endereco": "Rua B, 456",
+    "data_criacao": "2023-01-03"
+  },
+  {
+    "nome_cliente": "Pedro Almeida",
+    "email": "pedro.almeida@gmail.com",
+    "cpf": "456.123.789-00",
+    "endereco": "Rua C, 789",
+    "data_criacao": "2023-01-05"
+  },
+  {
+    "nome_cliente": "Camila Lima",
+    "email": "camila.lima@gmail.com",
+    "cpf": "789.123.456-00",
+    "endereco": "Rua D, 456",
+    "data_criacao": "2023-02-01"
+  },
+  {
+    "nome_cliente": "Juliana Paes",
+    "email": "juliana.paes@gmail.com",
+    "cpf": "321.654.987-00",
+    "endereco": "Rua E, 789",
+    "data_criacao": "2023-02-02"
+  },
+  {
+    "nome_cliente": "Carolina Lima",
+    "email": "carolina.lima@gmail.com",
+    "cpf": "654.987.321-00",
+    "endereco": "Rua F, 123",
+    "data_criacao": "2023-02-03"
+  },
+  {
+    "nome_cliente": "Gustavo Oliveira",
+    "email": "gustavo.oliveira@gmail.com",
+    "cpf": "789.654.123-00",
+    "endereco": "Rua G, 456",
+    "data_criacao": "2023-03-03"
+  },
+  {
+    "nome_cliente": "Beatriz Oliveira",
+    "email": "beatriz.oliveira@gmail.com",
+    "cpf": "654.789.123-00",
+    "endereco": "Rua H, 789",
+    "data_criacao": "2023-04-04"
+  },
+  {
+    "nome_cliente": "Ricardo Pereira",
+    "email": "lucas.santos@gmail.com",
+    "cpf": "987.456.321-00",
+    "endereco": "Rua I, 123",
+    "data_criacao": "2023-01-01"
+  },
+  {
+    "nome_cliente": "Amanda Santos",
+    "email": "amanda.santos@gmail.com",
+    "cpf": "123.789.456-00",
+    "endereco": "Rua J, 456",
+    "data_criacao": "2023-04-04"
+  }
 ]
