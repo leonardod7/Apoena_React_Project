@@ -18,6 +18,10 @@ const Container_Header = styled.div`
         display: none;
     }
 
+    &.visivel {
+        display: block;
+    }
+
     @media screen and (min-width: ${Dispositivo.desktop}px) {
         left: 100px;
     };

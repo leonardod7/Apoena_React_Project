@@ -105,6 +105,9 @@ const ContainerClientes = styled.div`
         display: none;
       } 
 
+      &.visivel {
+        display: block;
+    }
 `;
 
 const Div = styled.div`

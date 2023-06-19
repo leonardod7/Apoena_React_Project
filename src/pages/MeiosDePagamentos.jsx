@@ -33,6 +33,11 @@ const MeiosDePagamentos = () => {
         setFaturasVisiveis(!faturasVisiveis);
         setClientesVisiveis(!clientesVisiveis);
     };
+
+    const toggleNovoClienteVisivel = () => {
+        setClientesVisiveis(!clientesVisiveis);
+        setNovoClienteVisivel(!novoClienteVisivel);
+    }
     
     return (
         <>
@@ -54,7 +59,7 @@ const MeiosDePagamentos = () => {
                 <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
                     <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
                     <div style={{ display: 'flex', flexDirection: 'row' }}>
-                        <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
+                        <BotaoHeader_pgto onClick={toggleNovoClienteVisivel}>Novo Cliente</BotaoHeader_pgto>
                         <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
                     </div>
                 </Container_Header>
@@ -64,13 +69,15 @@ const MeiosDePagamentos = () => {
                 </ContainerClientes>
             </Div>
 
-            <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
-                <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
+            <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}>
+                <TituloHeader_pgto>Emissão de Novos Clientes II</TituloHeader_pgto>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
                     <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
-                    </div>
+                </div>
             </Container_Header>
+
+            <NovoCliente className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}></NovoCliente>
         </>
     );
 }
