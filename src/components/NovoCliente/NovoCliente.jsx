@@ -40,7 +40,7 @@ const NovoCliente = ( props ) => (
         <input style={input_data}></input>
         </Field>
         </Formulario>
-        <Enviar>Enviar</Enviar>
+        <Enviar><p style={{marginTop:"10px",fontWeight:"bolder",fontSize:"30px"}}>Enviar</p></Enviar>
     </Container>
 );
 export default NovoCliente;
