@@ -28,13 +28,13 @@ const Container_Header = styled.div`
 `;
 
 const TituloHeader_pgto = styled.h1`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Sans-Serif, sans-serif;
     font-size: 20px;
     color: #5B1F53;
 `;
 
 const BotaoHeader_pgto = styled.button`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Sans-Serif, sans-serif;
     background-color: #5B1F53;
     color: white;
     width: 100px;

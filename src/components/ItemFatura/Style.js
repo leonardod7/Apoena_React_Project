@@ -3,7 +3,7 @@ import Dispositivo from "../../utils";
 
 
 const Container = styled.div`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Sans-Serif, sans-serif;
     display: flex;
     align-items: center;
     max-width: 1100px;

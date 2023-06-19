@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Cabecalho = styled.div`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Sans-Serif, sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: #5B1F53;
