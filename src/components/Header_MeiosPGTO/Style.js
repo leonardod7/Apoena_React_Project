@@ -19,7 +19,7 @@ const Container_Header = styled.div`
     }
 
     &.visivel {
-        display: block;
+        display: flex;
     }
 
     @media screen and (min-width: ${Dispositivo.desktop}px) {
