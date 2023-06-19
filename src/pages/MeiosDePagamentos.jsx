@@ -5,7 +5,8 @@ import Header from "../components/Header/Header";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
 import NovoCliente from "../components/NovoCliente/NovoCliente";
-import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente } from "./Style";
+import NovaFatura from "../components/NovaFatura/NovaFatura";
+import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivFatura } from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
@@ -20,6 +21,7 @@ const MeiosDePagamentos = () => {
     const [faturasVisiveis, setFaturasVisiveis] = useState(true);
     const [clientesVisiveis, setClientesVisiveis] = useState(false);
     const [novoClienteVisivel, setNovoClienteVisivel] = useState(false);
+    const [criarFatura, setCriarFatura] = useState(false);
 
     const toggleMenu = () => {
         setMenuAberto(!MenuAberto);
@@ -37,6 +39,11 @@ const MeiosDePagamentos = () => {
     const toggleNovoClienteVisivel = () => {
         setClientesVisiveis(!clientesVisiveis);
         setNovoClienteVisivel(!novoClienteVisivel);
+    };
+
+    const toggleCriarFatura = () => {
+        setClientesVisiveis(!clientesVisiveis);
+        setCriarFatura(!criarFatura);
     };
     
     return (

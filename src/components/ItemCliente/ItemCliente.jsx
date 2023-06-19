@@ -5,7 +5,7 @@ const ItemCliente = ( props ) => (
         <Container>
             <Nome>{props.nome}</Nome>
             <Email>{props.email}</Email>
-            <Botao>Criar fatura</Botao>
+            <Botao onClick={toggleCriarFatura}>Criar fatura</Botao>
         </Container>
     </>
 );

@@ -118,7 +118,13 @@ const Div = styled.div`
 const DivNovoCliente = styled.div`
     &.oculto {
       display: none;
-    }.
+    };
 `;
 
-export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div, DivNovoCliente};
+const DivFatura = styled.div`
+    &.oculto {
+      display: none;
+    };
+`;
+
+export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivFatura};
