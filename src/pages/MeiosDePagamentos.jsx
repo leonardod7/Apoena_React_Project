@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
 import NovoCliente from "../components/NovoCliente/NovoCliente";
-import NovaFatura from "../components/NovaFatura/NovaFatura";
+import NovaFatura from "../components/NovaFatura/Novafatura";
 import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivNovaFatura} from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";

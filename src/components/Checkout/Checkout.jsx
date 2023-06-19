@@ -8,8 +8,6 @@ import {
   BeneficioDiv,
   BeneficioIcone,
   BeneficioDescricao,
-  BotaoDiv,
-  BotaoContratacao,
   NavegarCardDiv,
   BotaoSair,
   BotaoAvancar,
@@ -86,9 +84,9 @@ const Checkout = ({ fecharCheckout }) => {
     fecharCheckout(); // Chame a função fecharCheckout quando o botão "Sair" for clicado
   };
 
-  const handleFinalizarPagamento = () => {
+  /*const handleFinalizarPagamento = () => {
     fecharCheckout(); // Chame a função fecharCheckout quando o botão "Sair" for clicado
-  };
+  }; */
 
   return (
     <>
