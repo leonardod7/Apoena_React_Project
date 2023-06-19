@@ -15,7 +15,7 @@ const Subtitulo =
 const TemNavBar = false;
 
 function App() {
-  const [MenuAberto, setMenuAberto] = useState(true);
+  const [MenuAberto, setMenuAberto] = useState(false);
   const [CheckoutAberto, setCheckoutAberto] = useState(false);
 
   const toggleMenu = () => {
