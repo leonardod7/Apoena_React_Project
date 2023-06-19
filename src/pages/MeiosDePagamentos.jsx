@@ -12,9 +12,6 @@ import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
 
 
-const Subtitulo = "";
-const TemNavBar = false;
-
 const MeiosDePagamentos = () => {
 
     const [MenuAberto, setMenuAberto] = useState(true);
@@ -22,6 +19,11 @@ const MeiosDePagamentos = () => {
     const [clientesVisiveis, setClientesVisiveis] = useState(false);
     const [novoClienteVisivel, setNovoClienteVisivel] = useState(false);
     const [criarFatura, setCriarFatura] = useState(false);
+    const [faturaNome, setFaturaNome] = useState('');
+    const [faturaEmail, setFaturaEmail] = useState('');
+    const [faturaCpf, setFaturaCpf] = useState('');
+    const [faturaEndereco, setFaturaEndereco] = useState('');
+    const [voltar, setVoltar] = useState(false);
 
     const toggleMenu = () => {
         setMenuAberto(!MenuAberto);
@@ -41,9 +43,18 @@ const MeiosDePagamentos = () => {
         setNovoClienteVisivel(!novoClienteVisivel);
     };
 
-    const toggleCriarFatura = () => {
+    const toggleCriarFatura = ( nome, email, cpf, endereco ) => {
+        setFaturaNome(nome);
+        setFaturaEmail(email);
+        setFaturaCpf(cpf);
+        setFaturaEndereco(endereco);
         setClientesVisiveis(!clientesVisiveis);
         setCriarFatura(!criarFatura);
+    };
+
+    const toggleVoltar = () => {
+        setCriarFatura(!criarFatura);
+        setClientesVisiveis(!clientesVisiveis);
     };
     
     return (
@@ -72,7 +83,7 @@ const MeiosDePagamentos = () => {
                 </Container_Header>
 
                 <ContainerClientes className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
-                    <Clientes/>
+                    <Clientes toggleCriarFatura={toggleCriarFatura}/>
                 </ContainerClientes>
             </Div>
 
@@ -88,8 +99,16 @@ const MeiosDePagamentos = () => {
                 <NovoCliente></NovoCliente>
             </DivNovoCliente>
 
+            <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${criarFatura ? '' : 'oculto'}`}>
+                <TituloHeader_pgto>Criar Nova Fatura</TituloHeader_pgto>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <BotaoHeader_pgto style={{ backgroundColor: '#808080'}}>Novo Cliente</BotaoHeader_pgto>
+                    <BotaoHeader_pgto onClick={toggleVoltar}>Voltar</BotaoHeader_pgto>
+                </div>
+            </Container_Header>
+
             <DivNovaFatura className={`${MenuAberto ? 'menuAberto' : ''} ${criarFatura ? '' : 'oculto'}`}>
-                <NovaFatura></NovaFatura>
+                <NovaFatura nome={faturaNome} email={faturaEmail} cpf={faturaCpf} endereco={faturaEndereco}/>
             </DivNovaFatura>
         </>
     );

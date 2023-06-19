@@ -13,6 +13,29 @@ const Container = styled.div`
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
 `;
 
+const NomeEmail = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    
+`;
+
+const Cpf = styled.div`
+  display: flex;
+  flex-direction: column;
+    padding-left: 4%;
+    margin-top: 4px;,
+    margin-bottom: 4px;
+`;
+
+const Endereco = styled.div`
+  display: flex;
+  flex-direction: column;
+    padding-left: 4%;
+    margin-top: 4px;,
+    margin-bottom: 4px;
+`;
+
 const Container2 = styled.div`
     background-color: #320019;
     width: 80%;
@@ -89,4 +112,4 @@ function Dropdown() {
     );
   }
   
-export {Container,Container2,AdicionarItem,Salvar,MetodoPagamento,Dropdown} 
+export {Container, NomeEmail, Cpf, Endereco, Container2,AdicionarItem,Salvar,MetodoPagamento,Dropdown} 
