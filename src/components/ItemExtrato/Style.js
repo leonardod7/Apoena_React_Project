@@ -23,7 +23,7 @@ const Categoria = styled.span`
   width: 48px;
   height: 9px;
   top: 8px;
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
@@ -49,7 +49,7 @@ const Data = styled.span`
   height: 9px;
   left: 90%;
   top: 0%;
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
@@ -64,7 +64,7 @@ const Descricao = styled.span`
   height: 14px;
   left: 16px;
   top: 21px;
-  font-family: "Roboto";
+  font-family: "Roboto",sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;

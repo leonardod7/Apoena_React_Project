@@ -1,5 +1,0 @@
-Campo necessarios para emissão de boleto
-
-pf: nome, cpf, endereço, cep
-
-pj: razão social, cnpj, endereço, cep, inscrição estadual 
