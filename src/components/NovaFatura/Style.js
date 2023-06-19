@@ -17,21 +17,22 @@ const NomeEmail = styled.div`
     display: flex;
     flex-direction: column;
     padding-left: 5%;
-    
+    gap: 10px;
+    margin: 0px;
 `;
 
 const Cpf = styled.div`
   display: flex;
   flex-direction: column;
-    padding-left: 4%;
+    padding-left: 5%;
     margin-top: 4px;,
     margin-bottom: 4px;
 `;
 
 const Endereco = styled.div`
-  display: flex;
-  flex-direction: column;
-    padding-left: 4%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
     margin-top: 4px;,
     margin-bottom: 4px;
 `;

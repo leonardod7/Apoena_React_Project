@@ -3,10 +3,10 @@ import {Container, NomeEmail, Cpf, Endereco, Container2,AdicionarItem,Salvar,Met
 const NovaFatura = ( props ) => (
     <Container>
       <h3 style={{paddingLeft:"25px",marginBottom:"0.5%"}}>Nova Fatura</h3>
-        <h5 style={{paddingLeft:"5%",marginTop:"4px",marginBottom:"4px"}}>Enviar Para</h5>
+        <h5 style={{paddingLeft:"4%",marginTop:"4px",marginBottom:"4px"}}>Enviar Para</h5>
         <NomeEmail>
-          <p>{props.nome}</p>
-          <p>{props.email}</p>
+          <div style={{margin: '0px'}}>{props.nome}</div>
+          <div style={{margin: '0px'}}>{props.email}</div>
         </NomeEmail>
 
         <h5 style={{paddingLeft:"4%",marginTop:"4px",marginBottom:"4px"}}>Pessoa Fisica/Juridica</h5>
