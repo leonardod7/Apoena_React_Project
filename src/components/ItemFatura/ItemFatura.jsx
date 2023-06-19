@@ -1,4 +1,4 @@
-import { Container, DivValor, Valor, Status, Datas, DataVencimento, DataCriacao, Tipo, Nome } from "./Style";
+import { Container, NomeTitulo, Div, DivValor, Valor, Status, Datas, DataVencimento, DataCriacao, Tipo, Nome } from "./Style";
 
 const ItemFatura = ( props ) => {
     let corStatus;
@@ -15,18 +15,23 @@ const ItemFatura = ( props ) => {
 
     return (
         <Container>
-            <DivValor>
-                <Valor>R$ {props.valor},00</Valor>
-                <Status style={{ backgroundColor: corStatus, color: corLetras}}>{props.status}</Status>
-            </DivValor>
+            <NomeTitulo>
+                {props.nome}
+            </NomeTitulo>
+            <Div>
+                <DivValor>
+                    <Valor>R$ {props.valor},00</Valor>
+                    <Status style={{ backgroundColor: corStatus, color: corLetras}}>{props.status}</Status>
+                </DivValor>
 
-            <Datas>
-                <DataVencimento>Vencimento: {props.data_venc}</DataVencimento>
-                <DataCriacao>Expedição: {props.data_criacao}</DataCriacao>
-            </Datas>
+                <Datas>
+                    <DataVencimento>Vencimento: {props.data_venc}</DataVencimento>
+                    <DataCriacao>Expedição: {props.data_criacao}</DataCriacao>
+                </Datas>
 
-            <Tipo>{props.tipo}</Tipo>
-            <Nome>Cliente: {props.nome}</Nome>
+                <Tipo>{props.tipo}</Tipo>
+                <Nome>Cliente: {props.nome}</Nome>
+            </Div>
         </Container>
     )
 };

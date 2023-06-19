@@ -3,10 +3,8 @@ import { Container, Pessoa, Nome, Email, DataCriacao, Botao } from "./Style";
 const ItemCliente = ( props ) => (
     <>
         <Container>
-            <Pessoa>
-                <Nome>{props.nome}</Nome>
-                <Email>{props.email}</Email>
-            </Pessoa>
+            <Nome>{props.nome}</Nome>
+            <Email>{props.email}</Email>
             <Botao>Criar fatura</Botao>
         </Container>
     </>
