@@ -6,7 +6,7 @@ import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
 import NovoCliente from "../components/NovoCliente/NovoCliente";
 import NovaFatura from "../components/NovaFatura/NovaFatura";
-import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivFatura } from "./Style";
+import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivNovaFatura} from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
@@ -87,6 +87,10 @@ const MeiosDePagamentos = () => {
             <DivNovoCliente className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}>
                 <NovoCliente></NovoCliente>
             </DivNovoCliente>
+
+            <DivNovaFatura className={`${MenuAberto ? 'menuAberto' : ''} ${criarFatura ? '' : 'oculto'}`}>
+                <NovaFatura></NovaFatura>
+            </DivNovaFatura>
         </>
     );
 }

@@ -121,10 +121,10 @@ const DivNovoCliente = styled.div`
     };
 `;
 
-const DivFatura = styled.div`
+const DivNovaFatura = styled.div`
     &.oculto {
       display: none;
     };
 `;
 
-export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivFatura};
+export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivNovaFatura};
