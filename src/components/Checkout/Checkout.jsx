@@ -12,11 +12,15 @@ import {
   BotaoSair,
   BotaoAvancar,
   Input,
+  InputDiv,
+  FormularioDiv,
+  TituloFormDiv,
+  TextoForm
 } from "./Style";
-import Logo from "../../imagens/logo-gargo-premium.png";
-import Cartao from "../../imagens/cartao-credito-checkout.png";
-import Engrenagem from "../../imagens/engrenagem-checkout.png";
-import Relogio from "../../imagens/relogio-checkout.png";
+import Logo from "../../imagens/logo-gargo-premium-2.png";
+import Cartao from "../../imagens/cartao-credito.png";
+import GargoMobile from "../../imagens/gargoAPIMobile.png";
+import Call from "../../imagens/call.png";
 
 const Checkout = ({ fecharCheckout }) => {
   const [etapa, setEtapa] = useState(1);
@@ -31,21 +35,21 @@ const Checkout = ({ fecharCheckout }) => {
     switch (etapa) {
       case 1:
         return {
-          icone: Cartao,
+          icone: null,
           descricao:
-            "Com Gargo Premium você oferece Pix, crédito e boleto com agilidade!"
+            "O Gargo Premium é um serviço que combina cobrança estratégica e redução de custos para impulsionar a lucratividade da sua empresa."
         };
       case 2:
         return {
-          icone: Engrenagem,
+          icone: Cartao,
           descricao:
-            "Implementação facilitada para integração rápida e eficiente!"
+            "Passe a oferecer Pix, crédito e boleto com agilidade!"
         };
       case 3:
         return {
-          icone: Relogio,
+          icone: GargoMobile,
           descricao:
-            "Acompanhe suas faturas em tempo real e tenha controle total!"
+            "Tenha acesso a uma API personalizável, sem precisar de equipe de desenvolvimento."
         };
       case 4:
         return {
@@ -76,41 +80,48 @@ const Checkout = ({ fecharCheckout }) => {
         {etapa === 1 && "PAGAMENTO RÁPIDO E FÁCIL"}
         {etapa === 2 && "IMPLEMENTAÇÃO FACILITADA"}
         {etapa === 3 && "FATURAS EM TEMPO REAL"}
-        {etapa === 4 && "CONTRATE AGORA"}
+        {etapa === 4 && ""}
       </Titulo>
-      {etapa < 4 && (
+      {etapa === 1 &&(
         <BeneficioDiv>
-          <BeneficioIcone>
-            <img src={beneficio.icone} alt="Ícone do Benefício" />
+          <BeneficioDescricao id="etapa 1">{beneficio.descricao}</BeneficioDescricao>
+        </BeneficioDiv>
+      )}
+
+        {etapa > 1 && etapa < 4 &&(
+        <BeneficioDiv>
+          <BeneficioIcone id="etapa 2 ou 3">
+            <img src={beneficio.icone} alt={beneficio.icone === null ? "":"Ícone do Benefício"} />
           </BeneficioIcone>
           <BeneficioDescricao>{beneficio.descricao}</BeneficioDescricao>
         </BeneficioDiv>
       )}
-      {etapa === 4 && (
-        <BeneficioDiv>
-          <BeneficioDescricao>
-            <Input type="text" id="numeroCartao" name="numeroCartao" placeholder="Número do Cartão" required />
-            <Input type="text" id="nomeCartao" name="nomeCartao" placeholder="Nome impresso no cartão:" required />
-            <Input type="text" id="validadeCartao" name="validadeCartao" placeholder="MM/AA"required />
-            <Input type="text" id="CVV" name="CVV" placeholder="CVV"required />
-          </BeneficioDescricao>
-        </BeneficioDiv>
+      {etapa === 4 && beneficio.icone === null && beneficio.descricao === null && (
+
+        <FormularioDiv>
+            <TituloFormDiv>
+              <BeneficioIcone id="formulario">
+                <img src={Call} alt = "Contato"/>
+              </BeneficioIcone>
+              <TextoForm>Envie sua solicitação de contrato e responderemos suas dúvidas.</TextoForm>
+            </TituloFormDiv>
+            <InputDiv>
+              <Input type="text" id="numeroCartao" name="solicitante" placeholder="Nome Completo" required />
+              <Input type="text" id="nomeCartao" name="email" placeholder="Melhor E-mail:" required />
+            </InputDiv>
+            <NavegarCardDiv>
+              <BotaoSair onClick={handleBotaoSairClick} id="solicitacao">Sair</BotaoSair>
+              <BotaoAvancar onClick={avancarEtapa} id="solicitacao">Enviar Solicitação</BotaoAvancar>
+            </NavegarCardDiv>
+        </FormularioDiv>
       )}
 
-        {etapa === 4 && (
-          <BotaoDiv>
-            <BotaoContratacao onClick={handleFinalizarPagamento}>
-              Finalizar Pagamento
-            </BotaoContratacao>
-          </BotaoDiv>
-        )}
-      <NavegarCardDiv>
-        <BotaoSair onClick={handleBotaoSairClick}>Sair</BotaoSair>
-        {etapa < 4 &&(
-          <BotaoAvancar onClick={avancarEtapa}>&gt;&gt;</BotaoAvancar>
-        )}
-
-      </NavegarCardDiv>
+      {etapa < 4 &&(
+        <NavegarCardDiv>
+          <BotaoSair onClick={handleBotaoSairClick}>Sair</BotaoSair>
+          <BotaoAvancar onClick={avancarEtapa}>Proximo</BotaoAvancar>
+        </NavegarCardDiv>
+      )}
     </Container>
   );
 };
