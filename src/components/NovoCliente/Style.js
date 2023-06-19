@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Dispositivo  from "../../utils";
 
-const input_data= {
+const input_data = {
     width: '100%',
     height: '20%',
     backgroundColor:'#4CAF50',
@@ -32,7 +32,7 @@ const Formulario = styled.div`
         font-size:20px;
         height: 100%;
         width: 80%;
-    }
+    };
 
     @media screen and (max-width: 480px) {
         font-size: 40px;
@@ -40,16 +40,18 @@ const Formulario = styled.div`
         width: 80%;
         justify-content: center;
         margin-bottom:10px;
-}
+    };
 `;
+
 const Field = styled.div`
     @media screen and (max-width: 480px) {
         height: 200px;
         margin-left: 25px;
         margin-top: 4rem;
         align-items: center;
-}
+    };
 `;
+
 const Container = styled.div`
     background-color: #e1e1ff;
     width: 75%;
@@ -61,36 +63,19 @@ const Container = styled.div`
 
     &.oculto {
         display: none;
-    }
-
-    &.visivel {
-        display: block;
-    }
+    };
 `;
 
 const Enviar = styled.div`
     background-color: grey;
     width: 80%;
     height: 10%;
-    left:10%;
-    bottom:10px;
-    border-radius:8px;
+    left: 10%;
+    bottom: 10px;
+    border-radius: 8px;
     text-align: center;
-/*
-    @media screen and (max-width: 1080px){
-        left:0%;
-        width:100%;
-        height:10%;
-        justify-content:center;
-        font-size:30px;
-    }
-
-    @media screen and (max-width: 480px) {
-        width: 600px;
-        height: 100px;
-        font-size: 40px;
-  }*/
 `;
+
 const Sair= styled.div`
     width: 30px;
     height: 30px;
@@ -102,8 +87,9 @@ const Sair= styled.div`
 
     @media screen and (max-width: 480px) {
         left: 400px;
-  }
+  };
 `;
+
 const Titulo = styled.div`
     text-align: center;
     left: 20px;
@@ -111,11 +97,11 @@ const Titulo = styled.div`
 
     @media screen and (max-width: 1080px){
         font-size:20px;
-    }
+    };
 
     @media screen and (max-width: 480px) {
         font-size: 35px;
         bottom:1350px;
-  }
+    };
 `;
 export {Container,Enviar,Sair,Titulo,Formulario,Field,input_data}

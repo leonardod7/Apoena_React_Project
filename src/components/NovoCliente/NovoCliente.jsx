@@ -1,7 +1,7 @@
 import {Container,Enviar,Sair,Titulo,Formulario,Field,input_data} from "./Style.js";
 import ImagemX from "../../imagens/sair.png" ;
 
-const NovoCliente = ( props ) => (
+const NovoCliente = ( ) => (
     <Container>
         <Titulo><h1>Novo Cliente</h1></Titulo>
         <Sair><img src={ImagemX} alt="ImagemX" style={{paddingLeft:"7px",paddingTop:"5px"}}/></Sair>

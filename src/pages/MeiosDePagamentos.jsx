@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
 import NovoCliente from "../components/NovoCliente/NovoCliente";
-import { ContainerFaturas, ContainerClientes, Div } from "./Style";
+import { ContainerFaturas, ContainerClientes, Div, DivNovoCliente } from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
 import {BotaoHeader_pgto, Container_Header, TituloHeader_pgto} from "../components/Header_MeiosPGTO/Style";
@@ -37,7 +37,7 @@ const MeiosDePagamentos = () => {
     const toggleNovoClienteVisivel = () => {
         setClientesVisiveis(!clientesVisiveis);
         setNovoClienteVisivel(!novoClienteVisivel);
-    }
+    };
     
     return (
         <>
@@ -72,12 +72,14 @@ const MeiosDePagamentos = () => {
             <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}>
                 <TituloHeader_pgto>Emissão de Novos Clientes II</TituloHeader_pgto>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
-                    <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
+                    <BotaoHeader_pgto style={{ backgroundColor: '#808080'}}>Novo Cliente</BotaoHeader_pgto>
+                    <BotaoHeader_pgto onClick={toggleNovoClienteVisivel}>Voltar</BotaoHeader_pgto>
                 </div>
             </Container_Header>
 
-            <NovoCliente className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}></NovoCliente>
+            <DivNovoCliente className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}>
+                <NovoCliente></NovoCliente>
+            </DivNovoCliente>
         </>
     );
 }
