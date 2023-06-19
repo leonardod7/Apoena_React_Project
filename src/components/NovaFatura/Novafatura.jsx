@@ -19,9 +19,8 @@ const NovaFatura = ( props ) => (
           {props.endereco}
         </Endereco>
         
-        <Container2></Container2>
-        <AdicionarItem >Adicionar Item</AdicionarItem>
-        <Salvar>Salvar</Salvar>
+        <Container2><AdicionarItem >Adicionar Item</AdicionarItem></Container2>
+        <Salvar>Emitir Fatura</Salvar>
         <MetodoPagamento><Dropdown></Dropdown></MetodoPagamento>
         
     </Container>
