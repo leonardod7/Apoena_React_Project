@@ -74,6 +74,8 @@ const Titulo = styled.span`
 const BeneficioDiv = styled.div`
     width: 100%;
     height: 88px;
+    position: relative;
+    bottom: 50px;   
 `;
 
 const BeneficioIcone = styled.span`
@@ -157,7 +159,35 @@ const BotaoAvancar = styled.span`
     text-align: center;
 
     color: #F1F1F1;
+`;
 
+const Input = styled.input`
+background: #F1F1F1;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 17px;
+height: 36px;
+text-align: center; /* Centralizar horizontalmente */
+display: flex;
+align-items: center;
+justify-content: center;
+
+// Formatação do Texto nos Inputs
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8235px;
+line-height: 17px;
+color: #979797;
+
+&[id="validadeCartao"]{
+    width: 85px;
+  }
+&[id="CVV"]{
+    width: 85px;
+    position: relative;
+    left: 95px;
+    bottom: 42px;
+  }
 `;
 
 export {
@@ -171,5 +201,6 @@ export {
     BotaoContratacao,
     NavegarCardDiv,
     BotaoAvancar,
-    BotaoSair
+    BotaoSair,
+    Input,
 };

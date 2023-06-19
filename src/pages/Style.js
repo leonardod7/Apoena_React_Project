@@ -103,8 +103,7 @@ const ContainerClientes = styled.div`
 
       &.oculto {
         display: none;
-      } 
-
+      };
 `;
 
 const Div = styled.div`
@@ -116,4 +115,16 @@ const Div = styled.div`
       justify-content: space-around;
 `;
 
-export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div};
+const DivNovoCliente = styled.div`
+    &.oculto {
+      display: none;
+    };
+`;
+
+const DivNovaFatura = styled.div`
+    &.oculto {
+      display: none;
+    };
+`;
+
+export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div, DivNovoCliente, DivNovaFatura};

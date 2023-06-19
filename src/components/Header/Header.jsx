@@ -2,8 +2,6 @@ import {Container,Vmenu,Vperfil,Vsino,Titulo, SubContainer} from "./Style";
 import ImagemMenu from "../../imagens/Menu.png";
 import ImagemSino from "../../imagens/Sino.png" ;
 import ImagemPerfil from "../../imagens/Perfil.png" ;
-import {Button} from 'bootstrap';
-
 
 const Header =({toggleMenu, isOpen}) => {
    
