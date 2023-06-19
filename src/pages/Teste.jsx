@@ -5,10 +5,10 @@ import NovoCliente from "../components/NovoCliente/NovoCliente";
 import NovaFatura from "../components/NovaFatura/NovaFatura";
 
 const Teste = ( ) => (
-    <Checkout>
-        
-    </Checkout>
-
+    <div id='nova_pagina'>
+        <Menu />
+        <NovaFatura></NovaFatura>
+    </div>
 );
 
 export default Teste;

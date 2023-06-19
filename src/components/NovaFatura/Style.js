@@ -3,7 +3,6 @@ import Dispositivo  from "../../utils";
 import React, { useState } from 'react';
 
 const Container = styled.div`
-    position: absolute;
     background-color: #e1e1ff;
     width: 80%;
     height: 90%;
@@ -12,34 +11,9 @@ const Container = styled.div`
     border-radius:10px;
     border: 2px solid black;
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
-
-
-   /*@media screen and (min-width: ${Dispositivo.desktop}px) {
-        width: 100%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 50%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-        width: 25%;
-        height: 50%;
-        left:10%;
-        bottom:20%;
-        top: 10%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        width:100%;
-        height: 50%;
-        left:10%;
-        bottom:20%;
-        top: 10%;
-    };*/
 `;
+
 const Container2 = styled.div`
-    position: absolute;
     background-color: #320019;
     width: 80%;
     height: 35%;
@@ -55,18 +29,18 @@ const Container2 = styled.div`
         bottom:35%;
     };
 `;
+
 const AdicionarItem = styled.div`
-    position: absolute;
     background-color: blue;
     width: 120px;
     height: 25px;
-    left:20%;
-    bottom:22%;
+    left: 20%;
+    bottom: 22%;
     text-align: center;
     border: 3px solid black;
 `;
+
 const Salvar = styled.div`
-    position: absolute;
     background-color: greenyellow;
     width: 120px;
     height: 25px;
@@ -79,10 +53,10 @@ const Salvar = styled.div`
         height: 50px;
         left:75%;
         bottom:10%;
-    }
+    };
 `;
+
 const MetodoPagamento = styled.div`
-    position: absolute;
     background-color: #320019;
     width: 50%;
     height: 15%;
@@ -91,6 +65,7 @@ const MetodoPagamento = styled.div`
     border-radius: 10px;
     border: 2px solid black;
 `;
+
 function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
   

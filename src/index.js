@@ -10,7 +10,7 @@ import Transacoes from './pages/Transacoes';
 import MeiosDePagamentos from './pages/MeiosDePagamentos';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />

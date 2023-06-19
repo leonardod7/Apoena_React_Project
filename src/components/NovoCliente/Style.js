@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Dispositivo  from "../../utils";
 
-const input_data= {
+const input_data = {
     width: '100%',
     height: '20%',
     backgroundColor:'#4CAF50',
@@ -19,10 +19,7 @@ const input_data= {
     }
 };
 
-
-
 const Formulario = styled.div`
-    display:flex;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -32,29 +29,30 @@ const Formulario = styled.div`
     font-size:15px;
 
     @media screen and (max-width: 1080px){
-    font-size:20px;
-    height: 100%;
-    width: 80%;
-    }
+        font-size:20px;
+        height: 100%;
+        width: 80%;
+    };
 
     @media screen and (max-width: 480px) {
-    font-size: 40px;
-    height: 100%;
-    width: 80%;
-    justify-content: center;
-    margin-bottom:10px;
-}
+        font-size: 40px;
+        height: 100%;
+        width: 80%;
+        justify-content: center;
+        margin-bottom:10px;
+    };
 `;
+
 const Field = styled.div`
     @media screen and (max-width: 480px) {
-    height: 200px;
-    margin-left: 25px;
-    margin-top: 4rem;
-    align-items: center;
-}
+        height: 200px;
+        margin-left: 25px;
+        margin-top: 4rem;
+        align-items: center;
+    };
 `;
+
 const Container = styled.div`
-    position: absolute;
     background-color: #e1e1ff;
     width: 75%;
     height: 90%;
@@ -62,43 +60,23 @@ const Container = styled.div`
     top: 10%;
     border-radius:10px;
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
-/*
-    @media screen and (max-width: 1080px){
-    width:80%;
-    height: 90%    
-    }
 
-    @media screen and (max-width: 480px) {
-    width: 150%;
-    height:180%;
-  }*/
-    `;
+    &.oculto {
+        display: none;
+    };
+`;
+
 const Enviar = styled.div`
-    position: absolute;
     background-color: grey;
     width: 80%;
     height: 10%;
-    left:10%;
-    bottom:10px;
-    border-radius:8px;
+    left: 10%;
+    bottom: 10px;
+    border-radius: 8px;
     text-align: center;
-/*
-    @media screen and (max-width: 1080px){
-        left:0%;
-        width:100%;
-        height:10%;
-        justify-content:center;
-        font-size:30px;
-    }
-
-    @media screen and (max-width: 480px) {
-    width: 600px;
-    height: 100px;
-    font-size: 40px;
-  }*/
 `;
+
 const Sair= styled.div`
-    position: absolute;
     width: 30px;
     height: 30px;
     background-color:#f1f1f1;
@@ -108,22 +86,22 @@ const Sair= styled.div`
     vertical-align:bottom;
 
     @media screen and (max-width: 480px) {
-    left: 400px;
-  }
+        left: 400px;
+  };
 `;
+
 const Titulo = styled.div`
-    position: absolute;
     text-align: center;
     left: 20px;
     font-size:25px;
 
     @media screen and (max-width: 1080px){
-    font-size:20px;
-    }
+        font-size:20px;
+    };
 
     @media screen and (max-width: 480px) {
-    font-size: 35px;
-    bottom:1350px;
-  }
+        font-size: 35px;
+        bottom:1350px;
+    };
 `;
 export {Container,Enviar,Sair,Titulo,Formulario,Field,input_data}
