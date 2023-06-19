@@ -25,7 +25,7 @@ const Periodo = styled.span`
     /* Junho 2022 */
 
     height: 19px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;

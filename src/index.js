@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider} from 
+import {createHashRouter, RouterProvider} from 
 "react-router-dom";
 import Teste from './pages/Teste';
 import Transacoes from './pages/Transacoes';
 import MeiosDePagamentos from './pages/MeiosDePagamentos';
-
 
 
 const router = createBrowserRouter([

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import Dispositivo from "../../utils.js"
 
 const Container = styled.div`
     position: relative;
-    max-width: 1100px;
+    width: 100%;
     overflow-y: scroll;
-    border-top: 4px solid #5B1F53;
+    padding-top: 20px;
+    border-top: 4px solid #5b1f53;
 `;
 
 const Cabecalho = styled.div`
@@ -16,5 +16,4 @@ const Cabecalho = styled.div`
     align-text: left;
     margin-bottom: 20px;
 `;
-
 export { Container, Cabecalho };
