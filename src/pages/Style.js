@@ -65,28 +65,36 @@ const ContainerExtrato = styled.div`
 const ContainerFaturas = styled.div`
       display: flex;
       flex-direction: column;
-      align-items: left;
+      align-items: center;
+      justify-content: center;
       position: relative;
       padding-top: 20px;
-      left: 180px;
+      min-width: 400px;
 
       &.menuAberto {
-        left: 20%;
-        width: 80%;
       };
 
       &.oculto {
         display: none;
-      } 
+      }
+      
+      @media (max-width: 768px) {
+        width: 100%;
+    
+        &.menuAberto {
+          left: 0;
+          width: 100%;
+        }
+      }
 `;
 
 const ContainerClientes = styled.div`
       display: flex;
       flex-direction: column;
-      align-items: left;
-      position: relative;
+      align-items: center;
+      justify-content: center;
       padding-top: 20px;
-      left: 180px;
+      max-width: 900px;
 
       &.menuAberto {
         left: 20%;
@@ -96,6 +104,16 @@ const ContainerClientes = styled.div`
       &.oculto {
         display: none;
       } 
+
 `;
 
-export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes};
+const Div = styled.div`
+      display: flex;
+      flex-direction: column;
+      padding: auto;
+      margin: auto;
+      align-items: center;
+      justify-content: space-around;
+`;
+
+export {ContainerHome, ContainerExtrato, ContainerFaturas, ContainerClientes, Div};

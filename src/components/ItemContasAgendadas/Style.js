@@ -19,7 +19,7 @@ const Descricao = styled.span`
     left: 16px;
     top: 12px;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -41,7 +41,7 @@ height: 19px;
 right: 16px;
 top: 8px;
 
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 12px;

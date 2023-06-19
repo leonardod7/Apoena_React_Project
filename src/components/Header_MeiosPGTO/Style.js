@@ -1,32 +1,36 @@
 import styled from "styled-components";
+import Dispositivo from "../../utils";
 
 const Container_Header = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;
-    left: 125px;
+    left: 20px;
     padding-top: 10px;
     position: relative;
 
     &.menuAberto {
     left: 270px;
-    width: 80%;
     };
 
     &.oculto {
         display: none;
     }
+
+    @media screen and (min-width: ${Dispositivo.desktop}px) {
+        left: 100px;
+    };
 `;
 
 const TituloHeader_pgto = styled.h1`
-    font-family: 'ROBOTO';
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     color: #5B1F53;
 `;
 
 const BotaoHeader_pgto = styled.button`
+    font-family: 'Roboto', sans-serif;
     background-color: #5B1F53;
     color: white;
     width: 100px;

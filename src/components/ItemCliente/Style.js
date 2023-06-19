@@ -3,61 +3,44 @@ import Dispositivo from "../../utils";
 
 
 const Container = styled.div`
+    font-family: 'Roboto', sans-serif;
     display: flex;
     max-width: 900px;
-    flex-direction: row;
+    width: 70vw;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: normal;
+    justify-content: space-around;
+    align-items: center;
     gap: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        flex-direction: row;
+    };
 `;
 
-const Cabecalho = styled.div`
+const Pessoa = styled.div`
     display: flex;
-    max-width: 900px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: normal;
+    flex-direction: column;
+    padding: 10px;
     gap: 10px;
-    position: relative;
-    padding-left: 0%;
-    padding-top: 50px;
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        flex-direction: row;
+    };
 `;
 
 const Nome = styled.span`
-    width: 25%;
-    justify-content: right;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 20%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
+    justify-content: space-around;
+    min-width: 100px;
 `;
 
 const Email = styled.span`
-    width: 50%;
+    width: 200px;
     justify-content: left;
-
-    @media screen and (min-width: ${Dispositivo.desktop}px) {
-    };
-    
-    @media screen and (min-width: ${Dispositivo.tablet}px) {
-        width: 30%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-    };
 `;
 
 const DataCriacao = styled.span`
@@ -68,18 +51,11 @@ const DataCriacao = styled.span`
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
         display: block;
-        width: 25%;
-    };
-
-    @media screen and (min-width: ${Dispositivo.mobile}px) {
-    };
-
-    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        width: 100px;
     };
 `;
 
 const Botao = styled.button`
-    width: 25%;
     justify-content: right;
     background-color: light grey;
     color: #5B1F53;
@@ -90,4 +66,4 @@ const Botao = styled.button`
     margin-left: 10px;
 `;
 
-export {Container, Cabecalho, Nome, Email, DataCriacao, Botao};
+export {Container, Pessoa, Nome, Email, DataCriacao, Botao};
