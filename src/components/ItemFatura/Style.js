@@ -8,12 +8,12 @@ const Container = styled.div`
     align-items: center;
     max-width: 1100px;
     min-width: 280px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 10px;
     background-color: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
@@ -23,11 +23,13 @@ const Container = styled.div`
 const DivValor = styled.div`
     display: flex;
     flex-direction: column;
+    width: 180px;
     padding: 10px;
     gap: 10px;
 
     @media screen and (min-width: ${Dispositivo.tablet}px) {
         flex-direction: row;
+        width: 270px;
     };
 `;
 
@@ -44,14 +46,18 @@ const Valor = styled.div`
 
 const Status = styled.div`
     display: flex;
-    font-weight: bold;
-    justify-content: center;
+    font-size: 0.8em;
+    justify-content: space-around;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 110px;
+    width: 100px;
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        width: 130px;
+    };
 `;
 
 const Datas = styled.div`
@@ -80,6 +86,31 @@ const Tipo = styled.span`
 
 const Nome = styled.div`
     text-align: center;
+    display: none;
+  
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        display: block;
+    };
 `;
 
-export {Container, DivValor, Valor, Status, Datas, DataVencimento, DataCriacao, Tipo, Nome};
+const NomeTitulo = styled.div`
+    text-align: center;
+    font-weight: bold;
+  
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        display: none;
+    };
+`;
+
+const Div = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        grid-template-columns: repeat(4,1fr);
+    };
+`;
+
+export {Container, NomeTitulo, Div, DivValor, Valor, Status, Datas, DataVencimento, DataCriacao, Tipo, Nome};

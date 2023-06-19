@@ -7,7 +7,7 @@ const Container = styled.div`
     display: flex;
     max-width: 900px;
     width: 70vw;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
@@ -16,6 +16,10 @@ const Container = styled.div`
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 10px;
+
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        flex-direction: row;
+    };
 `;
 
 const Pessoa = styled.div`
