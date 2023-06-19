@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 //import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
 import Clientes from "../components/Clientes/Clientes";
+import NovoCliente from "../components/NovoCliente/NovoCliente";
 import { ContainerFaturas, ContainerClientes, Div } from "./Style";
 import { useState } from "react";
 import HeaderPage from "../components/Header_MeiosPGTO/HeaderPgto";
@@ -18,6 +19,7 @@ const MeiosDePagamentos = () => {
     const [MenuAberto, setMenuAberto] = useState(true);
     const [faturasVisiveis, setFaturasVisiveis] = useState(true);
     const [clientesVisiveis, setClientesVisiveis] = useState(false);
+    const [novoClienteVisivel, setNovoClienteVisivel] = useState(false);
 
     const toggleMenu = () => {
         setMenuAberto(!MenuAberto);
@@ -61,6 +63,14 @@ const MeiosDePagamentos = () => {
                     <Clientes/>
                 </ContainerClientes>
             </Div>
+
+            <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
+                <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <BotaoHeader_pgto>Novo Cliente</BotaoHeader_pgto>
+                    <BotaoHeader_pgto onClick={toggleClientesVisiveis}>Voltar</BotaoHeader_pgto>
+                    </div>
+            </Container_Header>
         </>
     );
 }
