@@ -35,7 +35,7 @@ const DivTexto = styled.div`
     top: 0px;
     margin-bottom: 50px;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Sans-Serif, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

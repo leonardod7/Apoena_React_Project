@@ -25,7 +25,7 @@ margin-bottom: 20px;
 const SaldoConta = styled.span`
 height: 19px;
 top: 16px;
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', Sans-Serif, sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -44,7 +44,7 @@ const Valor = styled.span`
 width: 144px;
 height: 28px;
 
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', Sans-Serif, sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
@@ -108,7 +108,7 @@ border-radius: 19px;
 const Label = styled.span`
 height: 12px;
 
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', Sans-Serif, sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 10px;
